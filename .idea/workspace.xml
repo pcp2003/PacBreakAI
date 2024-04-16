@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0538a2fe-7d0e-4bd3-ad70-89f63d42c2f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pacman/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pacman/PacmanGeneticAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pacman/PacmanNeuralNetwork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestParameters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bestParameters.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randomValues.txt" beforeDir="false" afterPath="$PROJECT_DIR$/randomValues.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pacman/Pacman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/Pacman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pacman/PacmanBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/PacmanBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pacman/RandomController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Commons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Commons.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +55,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Pacman",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/joaos/Documents/GitHub/AI_Project_",
+    "last_opened_file_path": "C:/Users/joaos/Documents/GitHub/AI_Project_/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +73,17 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joaos\Documents\GitHub\AI_Project_\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joaos\Documents\GitHub\AI_Project_" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pacman" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -101,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713260092331</updated>
-      <workItem from="1713260093420" duration="316000" />
+      <workItem from="1713260093420" duration="6998000" />
     </task>
     <servers />
   </component>
