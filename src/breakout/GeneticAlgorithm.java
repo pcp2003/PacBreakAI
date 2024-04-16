@@ -8,7 +8,7 @@ import java.util.Random;
 public class GeneticAlgorithm {
 
     private final int POPULATION_SIZE = 100;
-    private final int NUM_GENERATIONS = 100;
+    private final int NUM_GENERATIONS = 50;
     private double MUTATION_CHANCE = 0.20733758777463301;
     private double MUTATION_PERCENTAGE = 0.4944831677092099;
     private double CUTOFF = 0.613588965089243;
@@ -24,49 +24,49 @@ public class GeneticAlgorithm {
 
     // Construtor que gera parâmetros ALEATÓRIOS
 
-    public GeneticAlgorithm(int seed) {
-
-        this.seed = seed;
-
-        double r = ((Math.random() * 0.5) + 0.01);
-        System.out.println("First Random Created: " + r);
-        this.MUTATION_CHANCE = r;
-
-        r = ((Math.random() * 0.5) + 0.01);
-        System.out.println("Second Random Created: " + r);
-        this.MUTATION_PERCENTAGE = r;
-
-        r = ((Math.random() * 0.9) + 0.1);
-        System.out.println("Third Random Created: " + r);
-        this.CUTOFF = r;
-
-        r = ((Math.random() * 0.9) + 0.1);
-        System.out.println("Fourth Random Created: " + r);
-        this.SELECTION_PARENTS_PERCENTAGE = r;
-
-        int ra = (int) ((Math.random() * 5) + 2);
-        System.out.println("Fifth Random Created: " + r);
-        this.k_tournament = ra;
-
-        ra = (int) ((Math.random() * 5) + 1);
-        System.out.println("Fourth Random Created: " + r);
-        this.k_point = ra;
-
-        generatePopulation();
-
-        saveValues("randomValues.txt");
-    }
-
-    // Construtor para testar o MELHOR parâmetro!
-
 //    public GeneticAlgorithm(int seed) {
 //
 //        this.seed = seed;
 //
+//        double r = ((Math.random() * 0.5) + 0.01);
+//        System.out.println("First Random Created: " + r);
+//        this.MUTATION_CHANCE = r;
+//
+//        r = ((Math.random() * 0.5) + 0.01);
+//        System.out.println("Second Random Created: " + r);
+//        this.MUTATION_PERCENTAGE = r;
+//
+//        r = ((Math.random() * 0.9) + 0.1);
+//        System.out.println("Third Random Created: " + r);
+//        this.CUTOFF = r;
+//
+//        r = ((Math.random() * 0.9) + 0.1);
+//        System.out.println("Fourth Random Created: " + r);
+//        this.SELECTION_PARENTS_PERCENTAGE = r;
+//
+//        int ra = (int) ((Math.random() * 5) + 2);
+//        System.out.println("Fifth Random Created: " + r);
+//        this.k_tournament = ra;
+//
+//        ra = (int) ((Math.random() * 5) + 1);
+//        System.out.println("Fourth Random Created: " + r);
+//        this.k_point = ra;
+//
 //        generatePopulation();
 //
-//        saveValues();
+//        saveValues("randomValues.txt");
 //    }
+
+//     Construtor para testar o MELHOR parâmetro!
+
+    public GeneticAlgorithm(int seed) {
+
+        this.seed = seed;
+
+        generatePopulation();
+
+//        saveValues();
+    }
 
     // Construtor para testar CADA parâmetro durante o TREINO
 
@@ -122,9 +122,9 @@ public class GeneticAlgorithm {
                 }
             }
 
-            for (int j = 0; j != population.length; j++) {
-                System.out.println(population[j].getFitness());
-            }
+//            for (int j = 0; j != population.length; j++) {
+//                System.out.println(population[j].getFitness());
+//            }
 
             if (i != NUM_GENERATIONS - 1)
                 createNewPopulation(newGeneration);
@@ -163,31 +163,6 @@ public class GeneticAlgorithm {
 
     }
 
-    // mutate x genes with MUTATION_RATE chance
-//    private NeuronalNetwork mutate(NeuronalNetwork child) {
-//
-//        if (Math.random() <= MUTATION_CHANCE) {
-//
-//            double[] childNewPos = child.getNeuralNetwork();
-//
-//            int genesToMutate = (int) (NeuralNetworkValuesSize * MUTATION_PERCENTAGE);
-//
-//            for (int i = 0; i < genesToMutate; i++) {
-//
-//                // Escolhendo um gene aleatório para mutação
-//                int geneIndex = (int) (Math.random() * NeuralNetworkValuesSize);
-//
-//                // Mutação usando distribuição normal - ajuste a média e o desvio padrão conforme necessário
-//                double mutationAmount = (Math.random() - 0.5) * 0.3;
-//
-//                childNewPos[geneIndex] += mutationAmount;
-//            }
-//
-//            return new NeuronalNetwork(childNewPos);
-//        }
-//        return child;
-//    }
-
     private NeuronalNetwork mutate(NeuronalNetwork child) {
         Random random = new Random();
 
@@ -216,7 +191,6 @@ public class GeneticAlgorithm {
         }
         return child;
     }
-
 
     // k-point crossover
 

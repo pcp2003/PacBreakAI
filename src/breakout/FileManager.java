@@ -14,6 +14,8 @@ public class FileManager {
         this.filePath = filePath;
     }
 
+    // Método para escrever no ficheiro
+
     public void appendToFile(String content) {
         // Utiliza try-with-resources para garantir que o writer seja fechado após o uso
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
@@ -25,9 +27,7 @@ public class FileManager {
         }
     }
 
-    // Método para ler conteúdo do arquivo
-
-    // Método para processar o arquivo e retornar os parâmetros desejados
+    // Método para ler e processar o arquivo, retornando os parâmetros desejados
 
     public List<double[]> readAndProcessFile() {
         List<double[]> parametersList = new ArrayList<>();
@@ -71,4 +71,35 @@ public class FileManager {
 
         return parametersList;
     }
+
+    // Método para adicionar algoritmos genéticos random ao ficheiro
+
+    public static void addRandomGAToFile(int NrOfSeedsTested, int NrOfGATestedPerSeed) {
+
+        for (int i = 0; i != NrOfSeedsTested; i++) {
+
+            int seed = (int) ((Math.random() * 1000) + 1);
+
+
+            for (int j = 0; j != NrOfGATestedPerSeed; j++) {
+
+                GeneticAlgorithm ga = new GeneticAlgorithm(seed);
+
+                FileManager FA = new FileManager("randomValues.txt");
+
+                BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
+                b.setSeed(seed);
+                b.runSimulation();
+
+                double[] LF = ga.LastFive();
+
+                for (int k = 0; k != LF.length; k++) {
+                    FA.appendToFile(" Fitness = " + LF[k]);
+                }
+
+            }
+
+        }
+    }
+
 }

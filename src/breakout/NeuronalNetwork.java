@@ -64,41 +64,6 @@ public class NeuronalNetwork implements GameController, Comparable<NeuronalNetwo
         }
     }
 
-//    public void initializeParameters() {
-//
-//        hiddenWeights = new double[inputDim][hiddenDim];
-//        hiddenBiases = new double[hiddenDim];
-//        outputWeights = new double[hiddenDim][outputDim];
-//        outputBiases = new double[outputDim];
-//
-//        // Inicialização de Xavier para os pesos da camada oculta
-//        double lowerBoundHidden = -Math.sqrt(6.0 / (inputDim + hiddenDim));
-//        double upperBoundHidden = Math.sqrt(6.0 / (inputDim + hiddenDim));
-//
-//        for (int i = 0; i < inputDim; i++) {
-//            for (int j = 0; j < hiddenDim; j++) {
-//                hiddenWeights[i][j] = lowerBoundHidden + Math.random() * (upperBoundHidden - lowerBoundHidden);
-//            }
-//        }
-//
-//        // Inicialização de Xavier para os pesos da camada de saída
-//        double lowerBoundOutput = -Math.sqrt(6.0 / (hiddenDim + outputDim));
-//        double upperBoundOutput = Math.sqrt(6.0 / (hiddenDim + outputDim));
-//        for (int i = 0; i < hiddenDim; i++) {
-//            for (int j = 0; j < outputDim; j++) {
-//                outputWeights[i][j] = lowerBoundOutput + Math.random() * (upperBoundOutput - lowerBoundOutput);
-//            }
-//        }
-//
-//        // Inicializar vieses para 0 ou um pequeno valor aleatório próximo de 0
-//        for (int i = 0; i < hiddenDim; i++) {
-//            hiddenBiases[i] = 0; // Ou um valor pequeno aleatório se preferir
-//        }
-//        for (int i = 0; i < outputDim; i++) {
-//            outputBiases[i] = 0; // Ou um valor pequeno aleatório se preferir
-//        }
-//    }
-
     public void initializeParameters() {
         // Inicialização de He para os pesos da camada oculta
         double stdHidden = Math.sqrt(2.0 / inputDim);
