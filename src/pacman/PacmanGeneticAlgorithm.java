@@ -42,7 +42,7 @@ public class PacmanGeneticAlgorithm {
             System.out.println("Gen: " + i);
             Arrays.sort(population);
 
-            System.out.println("Generation " + i + ": " + population[POPULATION_SIZE - 1].getFitness());
+            System.out.println("Generation " + i + ": " + population[0].getFitness());
 
             PacmanNeuralNetwork[] newGeneration = new PacmanNeuralNetwork[POPULATION_SIZE];
 
@@ -54,10 +54,6 @@ public class PacmanGeneticAlgorithm {
                 newGeneration[j] = mutate(children[0]);
                 newGeneration[j + 1] = mutate(children[1]);
             }
-
-            //for (int j = 0; j != population.length; j++) {
-            //    System.out.println(population[j].getFitness());
-            //}
 
             if (i != NUM_GENERATIONS - 1)
                 createNewPopulation(newGeneration);
@@ -91,33 +87,13 @@ public class PacmanGeneticAlgorithm {
         if (Math.random() < MUTATION_CHANCE) {
             for (int i = 0; i < MUTATION_PERCENTAGE * Commons.PACMAN_NETWORK_SIZE; i++) {
                 int index = (int) (Math.random() * Commons.PACMAN_NETWORK_SIZE);
-                genes[index] += (Math.random() * 2 - 1);
-                //genes[index] = (Math.random() * 2 - 1) * MUTATIONMAGNITUDE;
+                genes[index] = (Math.random() * 2 - 1);
             }
         }
         individual.initializeParameters(genes);
         return individual;
     }
 
-
-/*
-    private void getBest(Pacman nn) {
-        if(nn.getFitness() > champion.getFitness()) {
-            interval = 0;
-            champion = new Pacman(nn.getNeuralNetwork(), seed);
-            if(Commons.SHOWNEWBEST)
-                System.out.println(champion);
-            if(Commons.PLAYNEWBEST) {
-                new Breakout(champion, seed);
-            }
-        } else {
-            interval++;
-        }
-    }
-*/
-
-
-    // k-point crossover
 
     private PacmanNeuralNetwork[] crossover(PacmanNeuralNetwork parent1, PacmanNeuralNetwork parent2) {
             double[] genes1 = parent1.getNeuralNetwork();
@@ -128,12 +104,8 @@ public class PacmanGeneticAlgorithm {
             int crossoverPoint = (int) (Math.random() * genes1.length);
 
             for (int i = 0; i < genes1.length; i++) {
-                child1[i] = ((genes1[i] * 0.5) + (genes2[i] * 0.5)) / 2;
-                child2[i] = ((genes1[i] * 0.5) + (genes2[i] * 0.5)) / 2;
-		    	/*
 		    	child1[i] = (i < crossoverPoint) ? genes1[i] : genes2[i];
 		        child2[i] = (i < crossoverPoint) ? genes2[i] : genes1[i];
-		        */
             }
 
             PacmanNeuralNetwork offspring1 = new PacmanNeuralNetwork(child1, seed);
