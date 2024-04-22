@@ -5,18 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0538a2fe-7d0e-4bd3-ad70-89f63d42c2f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pacman/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pacman/PacmanGeneticAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pacman/PacmanNeuralNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/down1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/down2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/down3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ghost.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/left1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/left2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/left3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pacman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/up1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/up2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/up3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bestParameters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bestParameters.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/randomValues.txt" beforeDir="false" afterPath="$PROJECT_DIR$/randomValues.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pacman/Pacman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/Pacman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pacman/PacmanBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/PacmanBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pacman/RandomController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Commons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Commons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/breakout/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/breakout/GeneticAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pacman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pacman/PacmanGeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/PacmanGeneticAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pacman/PacmanNeuralNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/PacmanNeuralNetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +48,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2f5N5HWNLsWnkyOCxVLaMg4aXDS" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
@@ -61,7 +70,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "Pacman",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/joaos/Documents/GitHub/AI_Project_/src",
+    "last_opened_file_path": "C:/Users/joaos/Documents/GitHub/AI_Project_",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,6 +84,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joaos\Documents\GitHub\AI_Project_" />
       <recent name="C:\Users\joaos\Documents\GitHub\AI_Project_\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

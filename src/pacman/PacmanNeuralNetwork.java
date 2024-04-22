@@ -13,6 +13,7 @@ public class PacmanNeuralNetwork implements GameController, Comparable<PacmanNeu
     private double[][] outputWeights;
     private double[] outputBiases;
 
+    private double fitness = 0;
     private final int seed;
 
     PacmanNeuralNetwork(int seed) {
@@ -29,23 +30,48 @@ public class PacmanNeuralNetwork implements GameController, Comparable<PacmanNeu
             throw new IllegalArgumentException("Incorrect size of input values array");
         }
     }
+    public double[] softmax(double[] inputs) {
+        double max = Double.NEGATIVE_INFINITY;
+        for (double input : inputs) {
+            if (input > max) {
+                max = input; // To prevent overflow
+            }
+        }
+
+        double sum = 0.0;
+        double[] exps = new double[inputs.length];
+        for (int i = 0; i < inputs.length; i++) {
+            exps[i] = Math.exp(inputs[i] - max); // Subtract max for numerical stability
+            sum += exps[i];
+        }
+
+        for (int i = 0; i < exps.length; i++) {
+            exps[i] /= sum;
+        }
+
+        return exps;
+    }
 
     @Override
     public int nextMove(double[] currentState) {
+        double maxValue = 0;
+        int max = 0;
         double[] output = forward(currentState);
-        if(output[0] > output[1])
-            return 1;
-        return 2;
+        for(int i = 0; i  < output.length; i++) {
+            if( output[i] > maxValue) {
+                max = i+1;
+                maxValue = output[i];
+            };
+        }
+        return maxValue == 0.25 ? 0 : max;
     }
 
     private double[] forward(double[] currentState) {
-        double[] inputValues = normalize(currentState);
-
         double[] hiddenLayer = new double[hiddenDim];
 
         for (int i = 0; i < hiddenDim; i++) {
             for (int j = 0; j < inputDim; j++) {
-                hiddenLayer[i] += hiddenWeights[j][i] * inputValues[j];
+                hiddenLayer[i] += hiddenWeights[j][i] * currentState[j];
             }
             hiddenLayer[i] = sigmoid(hiddenLayer[i] + hiddenBiases[i]);
         }
@@ -58,28 +84,22 @@ public class PacmanNeuralNetwork implements GameController, Comparable<PacmanNeu
             }
             output[i] = sigmoid(output[i] + outputBiases[i]);
         }
+        output = softmax(output);
         return output;
     }
 
-    private double[] normalize(double[] values) {
-        double[] result = new double[values.length];
-
-    	double total = 0;
-    	for(double k : values) total += k;
-    	total/=values.length;
-    	for(int i = 0; i < result.length; i++) result[i] = values[i]/total;
-
-        return result;
-    }
-
-        private double sigmoid(double x) {
+    private double sigmoid(double x) {
         return 1/(1+Math.exp(-x));
     }
 
     public double getFitness() {
+        return fitness;
+    }
+
+    public void calculateFitness() {
         PacmanBoard bb = new PacmanBoard(this, false, seed);
         bb.runSimulation();
-        return bb.getFitness();
+        this.fitness = bb.getFitness();
     }
 
     public int getSeed() {
@@ -128,19 +148,19 @@ public class PacmanNeuralNetwork implements GameController, Comparable<PacmanNeu
         int index = 0;
         for (int i = 0; i < inputDim; i++) {
             for (int j = 0; j < hiddenDim; j++) {
-                hiddenWeights[i][j] = values != null ? values[index++] :  ((Math.random() * 2) - 1);
+                hiddenWeights[i][j] = values != null ? values[index++] : ((Math.random() * 2) - 1);
             }
         }
         for (int i = 0; i < hiddenDim; i++) {
-            hiddenBiases[i] =  values != null ? values[index++] :  ((Math.random() * 2) - 1);
+            hiddenBiases[i] =  values != null ? values[index++] : ((Math.random() * 2) - 1);
         }
         for (int i = 0; i < hiddenDim; i++) {
             for (int j = 0; j < outputDim; j++) {
-                outputWeights[i][j] =  values != null ? values[index++] :  ((Math.random() * 2) - 1);
+                outputWeights[i][j] =  values != null ? values[index++] : ((Math.random() * 2) - 1);
             }
         }
         for (int i = 0; i < outputDim; i++) {
-            outputBiases[i] =  values != null ? values[index++] :  ((Math.random() * 2) - 1);
+            outputBiases[i] =  values != null ? values[index++] : ((Math.random() * 2) - 1);
         }
     }
 
@@ -148,7 +168,7 @@ public class PacmanNeuralNetwork implements GameController, Comparable<PacmanNeu
 
     @Override
     public int compareTo(PacmanNeuralNetwork o) {
-        return Double.compare(o.getFitness(), getFitness());
+        return Double.compare(getFitness(), o.getFitness());
     }
 
 }

@@ -122,9 +122,13 @@ public class GeneticAlgorithm {
                 }
             }
 
+            /*
             for (int j = 0; j != population.length; j++) {
                 System.out.println(population[j].getFitness());
             }
+            */
+
+
 
             if (i != NUM_GENERATIONS - 1)
                 createNewPopulation(newGeneration);
