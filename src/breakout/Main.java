@@ -7,7 +7,7 @@ public class Main {
 
     public static void watchGameplay() {
 
-        GeneticAlgorithm ga = new GeneticAlgorithm(seed);
+        GeneticAlgorithm ga = new GeneticAlgorithm(seed, 1);
         new Breakout(ga.search(), seed);
     }
 

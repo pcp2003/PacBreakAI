@@ -14,6 +14,17 @@ public class FileManager {
         this.filePath = filePath;
     }
 
+    // Método para guardar
+
+    public static void saveParameters(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, int k_tournament, int k_point, int seed, String filePath) {
+
+        FileManager FA = new FileManager(filePath);
+        FA.appendToFile(
+                "\nMutation chance : " + MUTATION_CHANCE + "\nMutation Percentage : " + MUTATION_PERCENTAGE + "\nCutoff : " + CUTOFF + "\nSelection Parents Percentage : " + SELECTION_PARENTS_PERCENTAGE + "\nK_Tournament : " + k_tournament + "\nK_Point : " + k_point + "\nSeed : " + seed
+        );
+    }
+
+
     // Método para escrever no ficheiro
 
     public void appendToFile(String content) {
@@ -83,7 +94,7 @@ public class FileManager {
 
             for (int j = 0; j != NrOfGATestedPerSeed; j++) {
 
-                GeneticAlgorithm ga = new GeneticAlgorithm(seed);
+                GeneticAlgorithm ga = new GeneticAlgorithm(seed, 0);
 
                 FileManager FA = new FileManager("randomValues.txt");
 

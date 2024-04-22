@@ -11,11 +11,7 @@ public class TesterGAs {
 
 // ATENÇãO, ESTA PARTE ABAIXO FOI REALIZADA COM INTUITO DE CONSEGUIR UMA GA QUE FOSSE BOA PARA VÁRIAS SEEDS.
 
-// Loop exterior realiza o mesmo processo para i seeds diferentes, com objetivo de garantir que os parametros escolhidos funcionam para diferentes seeds
-
-// Loop interior gera j algoritmos geneticos, guarda num ficheiro suas pontuações que depois serão lidas e
-// processadas (Apenas os parâmetros gerados que sejam capazes de originar um avarage fitness das
-// 5 melhores >= Commons.LeastPointsAccepted serão adicionados a matriz de melhores parametros associados a uma seed)
+    private static int MaxSeed = 1000;
 
     private static List<double[]> bestParameters = new ArrayList<double[]>(Commons.NrOfSeedsTested * Commons.NrOfGATested);
 
@@ -27,8 +23,6 @@ public class TesterGAs {
 
         int[] resultsList = new int[bestParameters.size()];
 
-        // Convertendo para matriz
-
         double[][] bestParametersArray = new double[bestParameters.size()][];
 
         for (int i = 0; i < bestParameters.size(); i++) {
@@ -37,7 +31,7 @@ public class TesterGAs {
 
         for (int i = 0; i != NrOfSeedsTested; i++) {
 
-            int seed = (int) ((Math.random() * 1000) + 1);
+            int seed = (int) ((Math.random() * MaxSeed) + 1);
 
             for (int j = 0; j != bestParameters.size(); j++) {
 
