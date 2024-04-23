@@ -12,7 +12,7 @@ public class GeneticAlgorithm {
     private double MUTATION_CHANCE = 0.20733758777463301;
     private double MUTATION_PERCENTAGE = 0.4944831677092099;
     private double CUTOFF = 0.613588965089243;
-    private double SELECTION_PARENTS_PERCENTAGE = 0.8229914386919087;
+    private double SELECTION_PARENTS_PERCENTAGE = 0.2; //0.8229914386919087
     private int k_tournament = 5;
     private int k_point = 3;
     private int seed;
@@ -22,51 +22,51 @@ public class GeneticAlgorithm {
 
     private NeuronalNetwork[] population = new NeuronalNetwork[POPULATION_SIZE];
 
-    // Construtor que gera parâmetros ALEATÓRIOS
+    // Construtor que gera parâmetros ALEATÓRIOS -> type == 0
+    // Construtor para testar o MELHOR parâmetro! -> type == 1
 
-    public GeneticAlgorithm(int seed) {
+    public GeneticAlgorithm(int seed, int type) {
 
-        this.seed = seed;
+        if (type == 0) {
+            this.seed = seed;
 
-        double r = ((Math.random() * 0.5) + 0.01);
-        System.out.println("First Random Created: " + r);
-        this.MUTATION_CHANCE = r;
+            double r = ((Math.random() * 0.5) + 0.01);
+            System.out.println("First Random Created: " + r);
+            this.MUTATION_CHANCE = r;
 
-        r = ((Math.random() * 0.5) + 0.01);
-        System.out.println("Second Random Created: " + r);
-        this.MUTATION_PERCENTAGE = r;
+            r = ((Math.random() * 0.5) + 0.01);
+            System.out.println("Second Random Created: " + r);
+            this.MUTATION_PERCENTAGE = r;
 
-        r = ((Math.random() * 0.9) + 0.1);
-        System.out.println("Third Random Created: " + r);
-        this.CUTOFF = r;
+            r = ((Math.random() * 0.9) + 0.1);
+            System.out.println("Third Random Created: " + r);
+            this.CUTOFF = r;
 
-        r = ((Math.random() * 0.9) + 0.1);
-        System.out.println("Fourth Random Created: " + r);
-        this.SELECTION_PARENTS_PERCENTAGE = r;
+            r = ((Math.random() * 0.9) + 0.1);
+            System.out.println("Fourth Random Created: " + r);
+            this.SELECTION_PARENTS_PERCENTAGE = r;
 
-        int ra = (int) ((Math.random() * 5) + 2);
-        System.out.println("Fifth Random Created: " + r);
-        this.k_tournament = ra;
+            int ra = (int) ((Math.random() * 5) + 2);
+            System.out.println("Fifth Random Created: " + r);
+            this.k_tournament = ra;
 
-        ra = (int) ((Math.random() * 5) + 1);
-        System.out.println("Fourth Random Created: " + r);
-        this.k_point = ra;
+            ra = (int) ((Math.random() * 5) + 1);
+            System.out.println("Fourth Random Created: " + r);
+            this.k_point = ra;
 
-        generatePopulation();
+            generatePopulation();
 
-        saveValues("randomValues.txt");
+            FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValues.txt");
+
+        } else {
+
+            this.seed = seed;
+
+            generatePopulation();
+
+        }
+
     }
-
-    // Construtor para testar o MELHOR parâmetro!
-
-//    public GeneticAlgorithm(int seed) {
-//
-//        this.seed = seed;
-//
-//        generatePopulation();
-//
-//        saveValues();
-//    }
 
     // Construtor para testar CADA parâmetro durante o TREINO
 
@@ -81,14 +81,7 @@ public class GeneticAlgorithm {
 
         generatePopulation();
 
-        saveValues("bestParameters.txt");
-    }
-
-    private void saveValues(String filePath) {
-        FileManager FA = new FileManager(filePath);
-        FA.appendToFile(
-                "\nMutation chance : " + MUTATION_CHANCE + "\nMutation Percentage : " + MUTATION_PERCENTAGE + "\nCutoff : " + CUTOFF + "\nSelection Parents Percentage : " + SELECTION_PARENTS_PERCENTAGE + "\nK_Tournament : " + k_tournament + "\nK_Point : " + k_point + "\nSeed : " + seed
-        );
+        FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "bestParameters.txt");
     }
 
     // Função para gerar o fitness da população para não violar as diretrizes do compareTo() no próximo passo (sort)
@@ -122,18 +115,16 @@ public class GeneticAlgorithm {
                 }
             }
 
-            for (int j = 0; j != population.length; j++) {
-                System.out.println(population[j].getFitness());
-            }
-
             if (i != NUM_GENERATIONS - 1)
                 createNewPopulation(newGeneration);
 
-
         }
+
         System.out.println("Last individual " + population[POPULATION_SIZE - 1].getFitness());
         return population[POPULATION_SIZE - 1];
     }
+
+    // lista com os 5 melhores fitness -> Usado no ficheiro randomValues.txt
 
     public double[] LastFive() {
         double[] LF = new double[5];
@@ -143,10 +134,7 @@ public class GeneticAlgorithm {
         return LF;
     }
 
-    //SELECTION_PERCENTAGE of the best children +
-    //(1-SELECTION_PERCENTAGE) of the best from the previous population
-
-    // Ex: Deixo os 25 melhores da populacao anterior, e substituo os 25 piores da populacao anterior pelo 25 melhores da nova geracao
+    //SELECTION_PERCENTAGE of the best children + (1-SELECTION_PERCENTAGE) of the best from the previous population
 
     private void createNewPopulation(NeuronalNetwork[] newgeneration) {
 
@@ -163,31 +151,6 @@ public class GeneticAlgorithm {
 
     }
 
-    // mutate x genes with MUTATION_RATE chance
-//    private NeuronalNetwork mutate(NeuronalNetwork child) {
-//
-//        if (Math.random() <= MUTATION_CHANCE) {
-//
-//            double[] childNewPos = child.getNeuralNetwork();
-//
-//            int genesToMutate = (int) (NeuralNetworkValuesSize * MUTATION_PERCENTAGE);
-//
-//            for (int i = 0; i < genesToMutate; i++) {
-//
-//                // Escolhendo um gene aleatório para mutação
-//                int geneIndex = (int) (Math.random() * NeuralNetworkValuesSize);
-//
-//                // Mutação usando distribuição normal - ajuste a média e o desvio padrão conforme necessário
-//                double mutationAmount = (Math.random() - 0.5) * 0.3;
-//
-//                childNewPos[geneIndex] += mutationAmount;
-//            }
-//
-//            return new NeuronalNetwork(childNewPos);
-//        }
-//        return child;
-//    }
-
     private NeuronalNetwork mutate(NeuronalNetwork child) {
         Random random = new Random();
 
@@ -196,16 +159,14 @@ public class GeneticAlgorithm {
             int genesToMutate = (int) (NeuralNetworkValuesSize * MUTATION_PERCENTAGE);
 
             for (int i = 0; i < genesToMutate; i++) {
+
                 // Escolhendo um gene aleatório para mutação
                 int geneIndex = random.nextInt(NeuralNetworkValuesSize);
 
-                // Mutação usando distribuição normal
-                // Considera-se uma variação pequena, por exemplo, com média 0 e desvio padrão 0.1
-                // Ajuste o desvio padrão conforme necessário para o seu caso
+                // Mutação usando distribuição normal, considera-se uma variação pequena, por exemplo, com média 0 e desvio padrão 0.1
                 double mutationAmount = random.nextGaussian() * 0.05;
 
                 // Aplica a mutação ao gene selecionado
-                // Aqui você pode adicionar ou substituir o valor do gene. Optei por adicionar para manter o exemplo próximo ao original
                 childNewPos[geneIndex] += mutationAmount;
 
                 // Garantir que o valor mutado não ultrapasse seus limites esperados
@@ -216,7 +177,6 @@ public class GeneticAlgorithm {
         }
         return child;
     }
-
 
     // k-point crossover
 
@@ -245,12 +205,15 @@ public class GeneticAlgorithm {
 
         // Para cada ponto de crossover
         for (int crossoverPoint : randoms) {
-
             // Troca os genes entre os pontos de crossover
             for (int geneIndex = startGeneIndex; geneIndex < crossoverPoint; geneIndex++) {
-
-                child1[geneIndex] = copyFromParent1 ? parent1_positions[geneIndex] : parent2_positions[geneIndex];
-                child2[geneIndex] = copyFromParent1 ? parent2_positions[geneIndex] : parent1_positions[geneIndex];
+                if (copyFromParent1) {
+                    child1[geneIndex] = parent1_positions[geneIndex];
+                    child2[geneIndex] = parent2_positions[geneIndex];
+                } else {
+                    child1[geneIndex] = parent2_positions[geneIndex];
+                    child2[geneIndex] = parent1_positions[geneIndex];
+                }
             }
 
             // Alterna a fonte de cópia após cada ponto de crossover
@@ -260,8 +223,13 @@ public class GeneticAlgorithm {
 
         // Copiar o segmento final após o último ponto de crossover
         for (int geneIndex = startGeneIndex; geneIndex < NeuralNetworkValuesSize; geneIndex++) {
-            child1[geneIndex] = copyFromParent1 ? parent1_positions[geneIndex] : parent2_positions[geneIndex];
-            child2[geneIndex] = copyFromParent1 ? parent2_positions[geneIndex] : parent1_positions[geneIndex];
+            if (copyFromParent1) {
+                child1[geneIndex] = parent1_positions[geneIndex];
+                child2[geneIndex] = parent2_positions[geneIndex];
+            } else {
+                child1[geneIndex] = parent2_positions[geneIndex];
+                child2[geneIndex] = parent1_positions[geneIndex];
+            }
         }
 
         // Criar redes neurais filhas com os novos arrays de genes
@@ -272,12 +240,14 @@ public class GeneticAlgorithm {
     }
 
     // Realiza seleção por torneio
+
     private NeuronalNetwork selectParent() {
 
         NeuronalNetwork[] possibleParents = new NeuronalNetwork[k_tournament];
 
         for (int i = 0; i != k_tournament; i++) {
-            possibleParents[i] = population[(int) (Math.random() * POPULATION_SIZE * SELECTION_PARENTS_PERCENTAGE)];
+
+            possibleParents[i] = population[(int) (POPULATION_SIZE - (Math.random() * POPULATION_SIZE * SELECTION_PARENTS_PERCENTAGE))];
         }
 
         Arrays.sort(possibleParents);
