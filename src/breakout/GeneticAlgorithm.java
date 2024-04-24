@@ -114,7 +114,7 @@ public class GeneticAlgorithm {
                     newGeneration[j + 1] = mutate(children[1]);
                 }
             }
-
+          
             if (i != NUM_GENERATIONS - 1)
                 createNewPopulation(newGeneration);
 

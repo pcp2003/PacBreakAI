@@ -41,5 +41,3 @@ Cutoff : 0.613588965089243
 Selection Parents Percentage : 0.8229914386919087
 K_Tournament : 5
 K_Point : 3
-Seed : 649
- Avarage Fitness = 198435.0
