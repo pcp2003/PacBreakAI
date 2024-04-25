@@ -2,6 +2,8 @@ package utils;
 
 import breakout.BreakoutBoard;
 import breakout.BreakoutGeneticAlgorithm;
+import pacman.PacmanBoard;
+import pacman.PacmanGeneticAlgorithm;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,9 +16,10 @@ public class TesterGAs {
 
     private static List<double[]> bestParameters = new ArrayList<double[]>(Commons.NrOfSeedsTested * Commons.NrOfGATested);
 
+
     // Método para adicionar algoritmos genéticos random ao ficheiro
 
-    public static void addRandomGAToFile(int NrOfSeedsTested, int NrOfGATestedPerSeed, String randomValuesPath) {
+    public static void addRandomGAToFile(int NrOfSeedsTested, int NrOfGATestedPerSeed, String game) {
 
         for (int i = 0; i != NrOfSeedsTested; i++) {
 
@@ -25,13 +28,27 @@ public class TesterGAs {
 
             for (int j = 0; j != NrOfGATestedPerSeed; j++) {
 
-                BreakoutGeneticAlgorithm ga = new BreakoutGeneticAlgorithm(seed, 0);
+                FileManager FA;
+                GeneticAlgorithm ga;
 
-                FileManager FA = new FileManager(randomValuesPath);
+                if(game.equals("breakout")) {
 
-                BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
-                b.setSeed(seed);
-                b.runSimulation();
+                    ga = new BreakoutGeneticAlgorithm(seed);
+
+                    BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
+                    b.setSeed(seed);
+                    b.runSimulation();
+
+                    FA = new FileManager("breakout");
+                } else {
+                    ga = new PacmanGeneticAlgorithm(seed);
+
+                    PacmanBoard b = new PacmanBoard(ga.search(), false, seed);
+                    b.setSeed(seed);
+                    b.runSimulation();
+
+                    FA = new FileManager("pacman");
+                }
 
                 double[] LF = ga.LastFive();
 
@@ -44,17 +61,22 @@ public class TesterGAs {
         }
     }
 
-    public static int[] testBestParameters(int NrOfSeedsTested, String randomValuesPath) {
+    public static int[] testBestParameters(int NrOfSeedsTested, String game) {
 
+        String randomValuesPath;
         String bestParametersPath;
         int mode;
 
         // Define qual dos jogos está sendo jogado.
 
-        if (randomValuesPath.equals("randomValuesBreakout.txt")){
+        if (game.equals("breakout")){
+            System.out.println("Playing breakout");
+            randomValuesPath = "randomValuesBreakout.txt";
             bestParametersPath = "bestParametersBreakout.txt";
             mode = Commons.BREAKOUT;
         }else{
+            System.out.println("Playing pacman");
+            randomValuesPath = "randomValuesPacman.txt";
             bestParametersPath = "bestParametersPacman.txt";
             mode = Commons.PACMAN;
         }
@@ -71,19 +93,32 @@ public class TesterGAs {
             bestParametersArray[i] = bestParameters.get(i);
         }
 
+
         for (int i = 0; i != NrOfSeedsTested; i++) {
+
 
             int seed = (int) ((Math.random() * MaxSeed) + 1);
 
             for (int j = 0; j != bestParameters.size(); j++) {
 
-                BreakoutGeneticAlgorithm ga = new BreakoutGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed, mode);
-
+                GeneticAlgorithm ga;
                 FileManager FA = new FileManager(bestParametersPath);
 
-                BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
-                b.setSeed(seed);
-                b.runSimulation();
+                if(game.equals("breakout")){
+
+                    ga = new BreakoutGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed, mode);
+
+                    BreakoutBoard b = new BreakoutBoard(ga.search(), true, seed);
+                    b.setSeed(seed);
+                    b.runSimulation();
+                } else {
+                    ga = new PacmanGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed, mode);
+
+                    BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
+                    b.setSeed(seed);
+                    b.runSimulation();
+                }
+
 
                 double[] LF = ga.LastFive();
                 double avarageFitness = 0;
@@ -137,11 +172,8 @@ public class TesterGAs {
 
         int[] result;
 
-        result = testBestParameters(2, "randomValuesBreakout.txt");
+        addRandomGAToFile(2, 2, "breakout");
 
-        for (int i = 0; i != result.length; i++) {
-            System.out.print(result[i]);
-        }
 
 //        finalTest(result);
 

@@ -6,10 +6,17 @@ import java.util.List;
 
 public class FileManager {
 
-    private String filePath;
+    private String bestBreakoutFile=  "randomValuesBreakout.txt";
+    private String bestPacmanFile =   "randomValuesPacman.txt";
 
-    public FileManager(String filePath) {
-        this.filePath = filePath;
+    private final String filePath;
+
+    public FileManager(String game) {
+        if(game.equals("breakout")) {
+            this.filePath = bestBreakoutFile;
+        } else {
+            this.filePath = bestPacmanFile;
+        }
     }
 
     // Método para guardar
