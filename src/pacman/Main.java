@@ -1,6 +1,6 @@
 package pacman;
 
-import utils.GeneticAlgorithim;
+import utils.GeneticAlgorithm;
 
 public class Main {
 
@@ -9,7 +9,7 @@ public class Main {
 
 	public static void watchGameplay() {
 
-		GeneticAlgorithim ga = new PacmanGeneticAlgorithm(seed);
+		GeneticAlgorithm ga = new PacmanGeneticAlgorithm(seed);
 		new Pacman(ga.search(), true, seed);
 	}
 
