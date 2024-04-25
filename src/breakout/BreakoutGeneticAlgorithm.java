@@ -10,9 +10,10 @@ import java.util.Random;
 
 public class BreakoutGeneticAlgorithm extends GeneticAlgorithm {
 
+
     public BreakoutGeneticAlgorithm(int seed) {
 
-        super(seed);
+        super(Commons.MUTATION_CHANCE_BREAKOUT, Commons.MUTATION_PERCENTAGE_BREAKOUT, Commons.CUTOFF_BREAKOUT, Commons.SELECTION_PARENTS_PERCENTAGE_BREAKOUT, Commons.k_tournament_BREAKOUT, Commons.k_point_BREAKOUT, seed);
 
         generatePopulation();
 
@@ -26,26 +27,21 @@ public class BreakoutGeneticAlgorithm extends GeneticAlgorithm {
 
         generatePopulation();
 
-        if (mode == Commons.PACMAN)
-            throw new IllegalArgumentException("Não é possível utilizar o modo Pacman durante o breakout");
 
         if (mode == Commons.BREAKOUT )
             FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesBreakout.txt");
-
+        else throw new IllegalArgumentException("Não é possível utilizar o modo Pacman durante o breakout");
     }
 
     public BreakoutGeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed, int mode) {
 
-        super(MUTATION_CHANCE, MUTATION_PERCENTAGE, CUTOFF, SELECTION_PARENTS_PERCENTAGE, k_tournament, k_Point, seed, mode);
+        super(MUTATION_CHANCE, MUTATION_PERCENTAGE, CUTOFF, SELECTION_PARENTS_PERCENTAGE, k_tournament, k_Point, seed);
 
         generatePopulation();
 
-        if (mode == Commons.PACMAN)
-            throw new IllegalArgumentException("Não é possível utilizar o modo Pacman durante o breakout");
-
         if (mode == Commons.BREAKOUT )
             FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesBreakout.txt");
-
+        else throw new IllegalArgumentException("Não é possível utilizar o modo Pacman durante o breakout");
     }
 
     public NeuronalNetwork search() {

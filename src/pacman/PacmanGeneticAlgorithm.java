@@ -11,7 +11,8 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
 
     public PacmanGeneticAlgorithm(int seed) {
 
-        super(seed);
+        super(Commons.MUTATION_CHANCE_PACMAN, Commons.MUTATION_PERCENTAGE_PACMAN, Commons.CUTOFF_PACMAN, Commons.SELECTION_PARENTS_PERCENTAGE_PACMAN, Commons.k_tournament_PACMAN, Commons.k_point_PACMAN, seed);
+
 
         generatePopulation();
 
@@ -35,7 +36,7 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
 
     public PacmanGeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed, int mode) {
 
-        super(MUTATION_CHANCE, MUTATION_PERCENTAGE, CUTOFF, SELECTION_PARENTS_PERCENTAGE, k_tournament, k_Point, seed, mode);
+        super(MUTATION_CHANCE, MUTATION_PERCENTAGE, CUTOFF, SELECTION_PARENTS_PERCENTAGE, k_tournament, k_Point, seed);
 
         generatePopulation();
 

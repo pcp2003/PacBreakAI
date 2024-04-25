@@ -7,21 +7,17 @@ public abstract class GeneticAlgorithm {
     public static Random random = new Random();
 
     public int POPULATION_SIZE = 100;
-    public int NUM_GENERATIONS = 100;
-    public double MUTATION_CHANCE = 0.20733758777463301;
-    public double MUTATION_PERCENTAGE = 0.4944831677092099;
-    public double CUTOFF = 0.613588965089243;
-    public double SELECTION_PARENTS_PERCENTAGE = 0.2; //0.8229914386919087
-    public int k_tournament = 5;
-    public int k_point = 3;
+    public int NUM_GENERATIONS = 50;
+    public double MUTATION_CHANCE;
+    public double MUTATION_PERCENTAGE;
+    public double CUTOFF;
+    public double SELECTION_PARENTS_PERCENTAGE;
+    public int k_tournament;
+    public int k_point;
+
 
     public int seed;
     public NeuronalNetwork[] population;
-
-    public GeneticAlgorithm(int seed) {
-        this.population = new NeuronalNetwork[POPULATION_SIZE];
-        this.seed = seed;
-    }
 
     // Constructors abaixo devem ser, idealmente, utilizados apenas na classe TesterGAs. Obrigado pela atenção, deus te abençoe.
 
@@ -34,27 +30,27 @@ public abstract class GeneticAlgorithm {
         this.seed = seed;
 
         double r = ((Math.random() * 0.5) + 0.01);
-        System.out.println("First Random Created: " + r);
+        System.out.println("MUTATION_CHANCE: " + r);
         this.MUTATION_CHANCE = r;
 
         r = ((Math.random() * 0.5) + 0.01);
-        System.out.println("Second Random Created: " + r);
+        System.out.println("MUTATION_PERCENTAGE: " + r);
         this.MUTATION_PERCENTAGE = r;
 
         r = ((Math.random() * 0.9) + 0.1);
-        System.out.println("Third Random Created: " + r);
+        System.out.println("CUTOFF: " + r);
         this.CUTOFF = r;
 
         r = ((Math.random() * 0.9) + 0.1);
-        System.out.println("Fourth Random Created: " + r);
+        System.out.println("SELECTION_PARENTS_PERCENTAGE: " + r);
         this.SELECTION_PARENTS_PERCENTAGE = r;
 
         int ra = (int) ((Math.random() * 5) + 2);
-        System.out.println("Fifth Random Created: " + r);
+        System.out.println("k_tournament: " + r);
         this.k_tournament = ra;
 
         ra = (int) ((Math.random() * 5) + 1);
-        System.out.println("Fourth Random Created: " + r);
+        System.out.println("k_point: " + r);
         this.k_point = ra;
 
 
@@ -63,7 +59,7 @@ public abstract class GeneticAlgorithm {
 
     // O contructor abaixo pode ser utilizado no [mode == COMMONS.BREAKOUT -> modo de teste do BREAKOUT (guarda no ficheiro | apenas deve ser utilizado em TestesGA), mode == COMMONS.PACMAN -> modo de teste do PACMAN (guarda no ficheiro | apenas deve ser utilizado em TestesGA) ]
 
-    public GeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed, int mode) {
+    public GeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed) {
 
         this.population = new NeuronalNetwork[POPULATION_SIZE];
 
@@ -74,8 +70,6 @@ public abstract class GeneticAlgorithm {
         this.k_tournament = (int) k_tournament;
         this.k_point = (int) k_Point;
         this.seed = (int) seed;
-
-
 
     }
 
