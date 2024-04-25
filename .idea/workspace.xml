@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b85894b-6e77-4535-a402-cf9ffec67f88" name="Changes" comment="" />
+    <list default="true" id="2b85894b-6e77-4535-a402-cf9ffec67f88" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestParametersBreakout.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bestParametersBreakout.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI_V6/breakout/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI_V6/breakout/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI_V6/utils/Commons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI_V6/utils/Commons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randomValuesBreakout.txt" beforeDir="false" afterPath="$PROJECT_DIR$/randomValuesBreakout.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/breakout/BreakoutGeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/breakout/BreakoutGeneticAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/breakout/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/breakout/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pacman/PacmanGeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/PacmanGeneticAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Commons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Commons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/GeneticAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/TesterGAs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/TesterGAs.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,17 +36,38 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.TesterGAs.executor": "Run",
     "Application.breakout.Main.executor": "Run",
+    "git-widget-placeholder": "testing-)-",
+    "last_opened_file_path": "C:/Users/joaos/Documents/GitHub/AI_Project_",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.breakout.Main">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joaos\Documents\GitHub\AI_Project_" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TesterGAs">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pacman.Main" />
       <module name="AI_V6" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pacman.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesterGAs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.TesterGAs" />
+      <module name="AI_V6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -56,6 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesterGAs" />
         <item itemvalue="Application.breakout.Main" />
         <item itemvalue="Application.Main" />
       </list>

@@ -33,13 +33,13 @@ public class TesterGAs {
 
                 if(game.equals("breakout")) {
 
-                    ga = new BreakoutGeneticAlgorithm(seed);
+                    ga = new BreakoutGeneticAlgorithm(seed, Commons.BREAKOUT);
 
                     BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
                     b.setSeed(seed);
                     b.runSimulation();
 
-                    FA = new FileManager("breakout");
+                    FA = new FileManager("randomValuesBreakout.txt");
                 } else {
                     ga = new PacmanGeneticAlgorithm(seed);
 
@@ -47,7 +47,7 @@ public class TesterGAs {
                     b.setSeed(seed);
                     b.runSimulation();
 
-                    FA = new FileManager("pacman");
+                    FA = new FileManager("randomValuesPacman.txt");
                 }
 
                 double[] LF = ga.LastFive();
@@ -103,7 +103,8 @@ public class TesterGAs {
 
                 GeneticAlgorithm ga;
                 FileManager FA = new FileManager(bestParametersPath);
-
+                System.out.println(" Modo : " + mode);
+                System.out.println(game);
                 if(game.equals("breakout")){
 
                     ga = new BreakoutGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed, mode);
@@ -170,14 +171,15 @@ public class TesterGAs {
 
     public static void main(String[] args) {
 
+        //addRandomGAToFile(2, 1, "breakout");
+
         int[] result;
 
-        addRandomGAToFile(2, 2, "breakout");
+        result = testBestParameters(2, "breakout");
 
-
-//        finalTest(result);
-
-//        System.out.print("PASSED THE TEST");
+        for (int i = 0; i != result.length; i++) {
+            System.out.print(result[i]);
+        }
 
     }
 }
