@@ -1,6 +1,6 @@
 package utils;
 
-import breakout.BreakoutBoard;
+import java.util.Arrays;
 
 public abstract class NeuronalNetwork implements GameController, Comparable<NeuronalNetwork> {
 
@@ -15,20 +15,27 @@ public abstract class NeuronalNetwork implements GameController, Comparable<Neur
     // Campo para armazenar o fitness
     private Double fitness = null;
 
-    public NeuronalNetwork() {
+    public NeuronalNetwork(int inputDim, int hiddenDim, int outputDim) {
+        this.inputDim = inputDim;
+        this.hiddenDim = hiddenDim;
+        this.outputDim = outputDim;
+        initializeParameters();
     }
 
-    public NeuronalNetwork(double[] values) {
+
+    public NeuronalNetwork(double[] values, int inputDim, int hiddenDim, int outputDim) {
+        this.inputDim = inputDim;
+        this.hiddenDim = hiddenDim;
+        this.outputDim = outputDim;
+        int maxSize = getNeuralNetworkSize();
+        if (values.length == maxSize) {
+            fillParametersWithValues(values);
+        } else {
+            throw new IllegalArgumentException("Incorrect size of input values array");
+        }
     }
 
-    public abstract void initializeParameters();
-    @Override
-    public abstract int nextMove(double[] currentState);
 
-    // Método para normalizar os dados de entrada
-    public abstract double[] normalizeInput(double[] inputValues);
-
-    public abstract double[] forward(double[] inputValues);
 
     public double[] getNeuralNetwork() {
 
@@ -106,14 +113,6 @@ public abstract class NeuronalNetwork implements GameController, Comparable<Neur
         return 0.0;
     }
 
-    // Método para calcular e armazenar o fitness
-    public void calculateAndStoreFitness(int seed) {
-        BreakoutBoard bb = new BreakoutBoard(this, false, seed);
-        bb.setSeed(seed);
-        bb.runSimulation();
-        this.fitness = bb.getFitness();
-    }
-
     @Override
     public String toString() {
         String result = "Neural Network: \nNumber of inputs: "
@@ -148,5 +147,83 @@ public abstract class NeuronalNetwork implements GameController, Comparable<Neur
         result += biasOutput;
         return result;
     }
+
+
+    public double[] softmax(double[] inputs) {
+
+        double max = Double.NEGATIVE_INFINITY;
+        for (double input : inputs) {
+            if (input > max) {
+                max = input; // To prevent overflow
+            }
+        }
+
+        double sum = 0.0;
+        double[] exps = new double[inputs.length];
+        for (int i = 0; i < inputs.length; i++) {
+            exps[i] = Math.exp(inputs[i] - max); // Subtract max for numerical stability
+            sum += exps[i];
+        }
+
+        for (int i = 0; i < exps.length; i++) {
+            exps[i] /= sum;
+        }
+
+        return exps;
+    }
+
+    public double relu(double x) {
+        return Math.max(0, x);
+    }
+
+    public double sigmoid(double x) {
+        return 1/(1+Math.exp(-x));
+    }
+
+    public void setFitness(double fitness) {
+        this.fitness = fitness;
+    }
+
+
+    public abstract int getNeuralNetworkSize();
+
+    public void initializeParameters() {
+        // Inicialização de He para os pesos da camada oculta
+        double stdHidden = Math.sqrt(2.0 / inputDim);
+
+        hiddenWeights = new double[inputDim][hiddenDim];
+        hiddenBiases = new double[hiddenDim];
+        outputWeights = new double[hiddenDim][outputDim];
+        outputBiases = new double[outputDim];
+
+        for (int i = 0; i < inputDim; i++) {
+            for (int j = 0; j < hiddenDim; j++) {
+                hiddenWeights[i][j] = stdHidden * (Math.random() * 2 - 1); // Distribuição uniforme [-stdHidden, stdHidden]
+            }
+        }
+
+        // Inicialização de He para os pesos da camada de saída
+        double stdOutput = Math.sqrt(2.0 / hiddenDim);
+        for (int i = 0; i < hiddenDim; i++) {
+            for (int j = 0; j < outputDim; j++) {
+                outputWeights[i][j] = stdOutput * (Math.random() * 2 - 1); // Distribuição uniforme [-stdOutput, stdOutput]
+            }
+        }
+
+        // Inicializar vieses para 0
+        Arrays.fill(hiddenBiases, 0);
+        Arrays.fill(outputBiases, 0);
+    }
+
+    @Override
+    public abstract int nextMove(double[] currentState);
+
+    // Método para normalizar os dados de entrada
+    public abstract double[] normalizeInput(double[] inputValues);
+
+    // Método para calcular e armazenar o fitness
+    public abstract void calculateAndStoreFitness(int seed);
+
+    public abstract double[] forward(double[] inputValues);
 
 }
