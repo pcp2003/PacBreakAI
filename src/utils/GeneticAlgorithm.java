@@ -1,6 +1,10 @@
 package utils;
 
-public abstract class GeneticAlgorithim {
+import java.util.Random;
+
+public abstract class GeneticAlgorithm {
+
+    public static Random random = new Random();
 
     public int POPULATION_SIZE = 100;
     public int NUM_GENERATIONS = 100;
@@ -14,20 +18,16 @@ public abstract class GeneticAlgorithim {
     public int seed;
     public NeuronalNetwork[] population;
 
-    public GeneticAlgorithim(int seed) {
-
+    public GeneticAlgorithm(int seed) {
         this.population = new NeuronalNetwork[POPULATION_SIZE];
-
         this.seed = seed;
-
-
     }
 
     // Constructors abaixo devem ser, idealmente, utilizados apenas na classe TesterGAs. Obrigado pela atenção, deus te abençoe.
 
     // O contructor abaixo pode ser utilizado no [mode == 0 -> apenas gera uma GA aleatória, mode == COMMONS.BREAKOUT -> modo de teste do BREAKOUT (guarda no ficheiro | apenas deve ser utilizado em TestesGA), mode == COMMONS.PACMAN -> modo de teste do PACMAN (guarda no ficheiro | apenas deve ser utilizado em TestesGA) ]
 
-    public GeneticAlgorithim (int seed, int mode) {
+    public GeneticAlgorithm(int seed, int mode) {
 
         this.population = new NeuronalNetwork[POPULATION_SIZE];
 
@@ -63,7 +63,7 @@ public abstract class GeneticAlgorithim {
 
     // O contructor abaixo pode ser utilizado no [mode == COMMONS.BREAKOUT -> modo de teste do BREAKOUT (guarda no ficheiro | apenas deve ser utilizado em TestesGA), mode == COMMONS.PACMAN -> modo de teste do PACMAN (guarda no ficheiro | apenas deve ser utilizado em TestesGA) ]
 
-    public GeneticAlgorithim(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed, int mode) {
+    public GeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed, int mode) {
 
         this.population = new NeuronalNetwork[POPULATION_SIZE];
 
