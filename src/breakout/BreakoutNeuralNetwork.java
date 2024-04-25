@@ -3,59 +3,23 @@ package breakout;
 import utils.Commons;
 import utils.NeuronalNetwork;
 
-import java.util.Arrays;
-
 public class BreakoutNeuralNetwork extends NeuronalNetwork {
 
     private int inputDim = Commons.BREAKOUT_STATE_SIZE;
     private int hiddenDim = Commons.BREAKOUT_HIDDENDIM_SIZE;
     private int outputDim = Commons.BREAKOUT_NUM_ACTIONS;
 
-    // Campo para armazenar o fitness
-    private Double fitness = null;
-
     public BreakoutNeuralNetwork() {
-        initializeParameters();
+        super(Commons.BREAKOUT_STATE_SIZE, Commons.BREAKOUT_HIDDENDIM_SIZE, Commons.BREAKOUT_NUM_ACTIONS);
     }
 
     public BreakoutNeuralNetwork(double[] values) {
-        fillParametersWithValues(values);
+        super(values, Commons.BREAKOUT_STATE_SIZE, Commons.BREAKOUT_HIDDENDIM_SIZE, Commons.BREAKOUT_NUM_ACTIONS);
     }
 
-    public void initializeParameters() {
-        // Inicialização de He para os pesos da camada oculta
-        double stdHidden = Math.sqrt(2.0 / inputDim);
-
-        hiddenWeights = new double[inputDim][hiddenDim];
-        hiddenBiases = new double[hiddenDim];
-        outputWeights = new double[hiddenDim][outputDim];
-        outputBiases = new double[outputDim];
-
-        for (int i = 0; i < inputDim; i++) {
-            for (int j = 0; j < hiddenDim; j++) {
-                hiddenWeights[i][j] = stdHidden * (Math.random() * 2 - 1); // Distribuição uniforme [-stdHidden, stdHidden]
-            }
-        }
-
-        // Inicialização de He para os pesos da camada de saída
-        double stdOutput = Math.sqrt(2.0 / hiddenDim);
-        for (int i = 0; i < hiddenDim; i++) {
-            for (int j = 0; j < outputDim; j++) {
-                outputWeights[i][j] = stdOutput * (Math.random() * 2 - 1); // Distribuição uniforme [-stdOutput, stdOutput]
-            }
-        }
-
-        // Inicializar vieses para 0
-        Arrays.fill(hiddenBiases, 0);
-        Arrays.fill(outputBiases, 0);
-    }
-
-    public double sigmoid(double x) {
-        return 1.0 / (1.0 + Math.exp(-x));
-    }
-
-    public double relu(double x) {
-        return Math.max(0, x);
+    @Override
+    public int getNeuralNetworkSize() {
+        return Commons.BREAKOUT_NETWORK_SIZE;
     }
 
     // next move e o foward da rede
@@ -121,6 +85,12 @@ public class BreakoutNeuralNetwork extends NeuronalNetwork {
         return outputLayerOutput;
     }
 
-
+    @Override
+    public void calculateAndStoreFitness(int seed) {
+        BreakoutBoard bb = new BreakoutBoard(this, false, seed);
+        bb.setSeed(seed);
+        bb.runSimulation();
+        this.setFitness(bb.getFitness());
+    }
 }
 
