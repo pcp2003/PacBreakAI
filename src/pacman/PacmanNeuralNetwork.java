@@ -3,23 +3,19 @@ package pacman;
 import utils.Commons;
 import utils.NeuronalNetwork;
 
-import java.util.Arrays;
-
 public class PacmanNeuralNetwork extends NeuronalNetwork {
 
     private int inputDim = Commons.PACMAN_STATE_SIZE;
     private int hiddenDim = Commons.PACMAN_HIDDEN_LAYER;
     private int outputDim = Commons.PACMAN_NUM_ACTIONS;
 
-    // Campo para armazenar o fitness
-    private Double fitness = null;
 
     public PacmanNeuralNetwork() {
-        initializeParameters();
+        super(Commons.PACMAN_STATE_SIZE, Commons.PACMAN_HIDDEN_LAYER, Commons.PACMAN_NUM_ACTIONS);
     }
 
     public PacmanNeuralNetwork(double[] values) {
-        fillParametersWithValues(values);
+        super(values, Commons.PACMAN_STATE_SIZE, Commons.PACMAN_HIDDEN_LAYER, Commons.PACMAN_NUM_ACTIONS);
     }
 
     // Método para normalizar os dados de entrada
@@ -42,32 +38,12 @@ public class PacmanNeuralNetwork extends NeuronalNetwork {
         return normalizedValues;
     }
 
-    public void initializeParameters() {
-        // Inicialização de He para os pesos da camada oculta
-        double stdHidden = Math.sqrt(2.0 / inputDim);
-
-        hiddenWeights = new double[inputDim][hiddenDim];
-        hiddenBiases = new double[hiddenDim];
-        outputWeights = new double[hiddenDim][outputDim];
-        outputBiases = new double[outputDim];
-
-        for (int i = 0; i < inputDim; i++) {
-            for (int j = 0; j < hiddenDim; j++) {
-                hiddenWeights[i][j] = stdHidden * (Math.random() * 2 - 1); // Distribuição uniforme [-stdHidden, stdHidden]
-            }
-        }
-
-        // Inicialização de He para os pesos da camada de saída
-        double stdOutput = Math.sqrt(2.0 / hiddenDim);
-        for (int i = 0; i < hiddenDim; i++) {
-            for (int j = 0; j < outputDim; j++) {
-                outputWeights[i][j] = stdOutput * (Math.random() * 2 - 1); // Distribuição uniforme [-stdOutput, stdOutput]
-            }
-        }
-
-        // Inicializar vieses para 0
-        Arrays.fill(hiddenBiases, 0);
-        Arrays.fill(outputBiases, 0);
+    @Override
+    public void calculateAndStoreFitness(int seed) {
+        PacmanBoard bb = new PacmanBoard(this, false, seed);
+        bb.setSeed(seed);
+        bb.runSimulation();
+        this.setFitness(bb.getFitness());
     }
 
     @Override
@@ -138,31 +114,9 @@ public class PacmanNeuralNetwork extends NeuronalNetwork {
         return networkParams;
     }
 
-    public double[] softmax(double[] inputs) {
-
-        double max = Double.NEGATIVE_INFINITY;
-        for (double input : inputs) {
-            if (input > max) {
-                max = input; // To prevent overflow
-            }
-        }
-
-        double sum = 0.0;
-        double[] exps = new double[inputs.length];
-        for (int i = 0; i < inputs.length; i++) {
-            exps[i] = Math.exp(inputs[i] - max); // Subtract max for numerical stability
-            sum += exps[i];
-        }
-
-        for (int i = 0; i < exps.length; i++) {
-            exps[i] /= sum;
-        }
-
-        return exps;
-    }
-
-    private double sigmoid(double x) {
-        return 1/(1+Math.exp(-x));
+    @Override
+    public int getNeuralNetworkSize() {
+        return Commons.PACMAN_NETWORK_SIZE;
     }
 
 }
