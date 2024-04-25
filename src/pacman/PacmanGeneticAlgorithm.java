@@ -1,15 +1,13 @@
 package pacman;
 
-import breakout.BreakoutNeuralNetwork;
 import utils.Commons;
 import utils.FileManager;
-import utils.GeneticAlgorithim;
+import utils.GeneticAlgorithm;
 import utils.NeuronalNetwork;
 
 import java.util.Arrays;
-import java.util.Random;
 
-public class PacmanGeneticAlgorithm extends GeneticAlgorithim {
+public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
 
     public PacmanGeneticAlgorithm(int seed) {
 
@@ -98,108 +96,53 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithim {
 
     }
 
-    public NeuronalNetwork mutate(NeuronalNetwork child) {
-        Random random = new Random();
-
-        if (Math.random() <= MUTATION_CHANCE) {
-            double[] childNewPos = child.getNeuralNetwork();
-            int genesToMutate = (int) (Commons.PACMAN_NETWORK_SIZE * MUTATION_PERCENTAGE);
-
-            for (int i = 0; i < genesToMutate; i++) {
-
-                // Escolhendo um gene aleatório para mutação
-                int geneIndex = random.nextInt(Commons.PACMAN_NETWORK_SIZE);
-
-                // Mutação usando distribuição normal, considera-se uma variação pequena, por exemplo, com média 0 e desvio padrão 0.1
-                double mutationAmount = random.nextGaussian() * 0.05;
-
-                // Aplica a mutação ao gene selecionado
-                childNewPos[geneIndex] += mutationAmount;
-
-                // Garantir que o valor mutado não ultrapasse seus limites esperados
-                childNewPos[geneIndex] = Math.min(Math.max(childNewPos[geneIndex], -1), 1);
+    public NeuronalNetwork mutate(NeuronalNetwork individual) {
+        double[] genes = individual.getNeuralNetwork();
+        if (Math.random() < MUTATION_CHANCE) {
+            for (int i = 0; i < MUTATION_PERCENTAGE * Commons.PACMAN_NETWORK_SIZE; i++) {
+                int index = (int) (random.nextDouble() * Commons.PACMAN_NETWORK_SIZE);
+                genes[index] = (random.nextDouble() * 2 - 1);
             }
-
-            return new PacmanNeuralNetwork(childNewPos);
         }
-        return child;
+        individual.fillParametersWithValues(genes);
+        return individual;
     }
 
     // k-point crossover
 
     public NeuronalNetwork[] crossover(NeuronalNetwork parent1, NeuronalNetwork parent2) {
-        int numberOfChildren = 2;
-        int[] randoms = new int[k_point];
+        double[] genes1 = parent1.getNeuralNetwork();
+        double[] genes2 = parent2.getNeuralNetwork();
+        double[] child1 = new double[genes1.length];
+        double[] child2 = new double[genes2.length];
 
-        // Gerar pontos de crossover aleatórios
-        for (int i = 0; i < k_point; i++) {
-            randoms[i] = (int) (Math.random() * Commons.PACMAN_NETWORK_SIZE);
-        }
-        // Ordenar os pontos de crossover
-        Arrays.sort(randoms);
+        int crossoverPoint = (int) (Math.random() * genes1.length);
 
-        NeuronalNetwork[] children = new PacmanNeuralNetwork[numberOfChildren];
-        double[] child1 = new double[Commons.PACMAN_NETWORK_SIZE];
-        double[] child2 = new double[Commons.PACMAN_NETWORK_SIZE];
-        double[] parent1_positions = parent1.getNeuralNetwork();
-        double[] parent2_positions = parent2.getNeuralNetwork();
-
-        // Inicializa variável para controlar de qual pai copiar
-        boolean copyFromParent1 = true;
-
-        // Inicia no primeiro gene
-        int startGeneIndex = 0;
-
-        // Para cada ponto de crossover
-        for (int crossoverPoint : randoms) {
-            // Troca os genes entre os pontos de crossover
-            for (int geneIndex = startGeneIndex; geneIndex < crossoverPoint; geneIndex++) {
-                if (copyFromParent1) {
-                    child1[geneIndex] = parent1_positions[geneIndex];
-                    child2[geneIndex] = parent2_positions[geneIndex];
-                } else {
-                    child1[geneIndex] = parent2_positions[geneIndex];
-                    child2[geneIndex] = parent1_positions[geneIndex];
-                }
-            }
-
-            // Alterna a fonte de cópia após cada ponto de crossover
-            copyFromParent1 = !copyFromParent1;
-            startGeneIndex = crossoverPoint; // Atualiza o índice de início para o próximo segmento
+        for (int i = 0; i < genes1.length; i++) {
+            child1[i] = (i < crossoverPoint) ? genes1[i] : genes2[i];
+            child2[i] = (i < crossoverPoint) ? genes2[i] : genes1[i];
         }
 
-        // Copiar o segmento final após o último ponto de crossover
-        for (int geneIndex = startGeneIndex; geneIndex < Commons.PACMAN_NETWORK_SIZE; geneIndex++) {
-            if (copyFromParent1) {
-                child1[geneIndex] = parent1_positions[geneIndex];
-                child2[geneIndex] = parent2_positions[geneIndex];
-            } else {
-                child1[geneIndex] = parent2_positions[geneIndex];
-                child2[geneIndex] = parent1_positions[geneIndex];
-            }
-        }
+        NeuronalNetwork offspring1 = new PacmanNeuralNetwork(child1);
+        NeuronalNetwork offspring2 = new PacmanNeuralNetwork(child2);
+        return new NeuronalNetwork[]{offspring1, offspring2};
 
-        // Criar redes neurais filhas com os novos arrays de genes
-        children[0] = new PacmanNeuralNetwork(child1);
-        children[1] = new PacmanNeuralNetwork(child2);
-
-        return children;
     }
 
     // Realiza seleção por torneio
 
     public NeuronalNetwork selectParent() {
 
-        NeuronalNetwork[] possibleParents = new PacmanNeuralNetwork[k_tournament];
+        NeuronalNetwork best = population[(int) (Math.random() * POPULATION_SIZE)];
 
-        for (int i = 0; i != k_tournament; i++) {
+        for (int i = 1; i < k_tournament; i++) {
+            NeuronalNetwork c = population[(int) (Math.random() * POPULATION_SIZE)];
 
-            possibleParents[i] = population[(int) (POPULATION_SIZE - (Math.random() * POPULATION_SIZE * SELECTION_PARENTS_PERCENTAGE))];
+            if (c.getFitness() > best.getFitness())
+                best = c;
+
         }
-
-        Arrays.sort(possibleParents);
-
-        return possibleParents[k_tournament - 1];
+        return best;
 
     }
 
@@ -208,12 +151,5 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithim {
             population[i] = new PacmanNeuralNetwork();
         }
     }
-
-    public void generatePopulationFitness(NeuronalNetwork[] Allindividuals) {
-        for (NeuronalNetwork nn : Allindividuals) {
-            ((PacmanNeuralNetwork) nn).calculateAndStoreFitness(this.seed);
-        }
-    }
-
 }
 
