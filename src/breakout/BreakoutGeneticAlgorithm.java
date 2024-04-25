@@ -2,13 +2,13 @@ package breakout;
 
 import utils.Commons;
 import utils.FileManager;
-import utils.GeneticAlgorithim;
+import utils.GeneticAlgorithm;
 import utils.NeuronalNetwork;
 
 import java.util.Arrays;
 import java.util.Random;
 
-public class BreakoutGeneticAlgorithm extends GeneticAlgorithim {
+public class BreakoutGeneticAlgorithm extends GeneticAlgorithm {
 
     public BreakoutGeneticAlgorithm(int seed) {
 
