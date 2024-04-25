@@ -1,0 +1,8 @@
+
+Mutation chance : 0.20111432125120626
+Mutation Percentage : 0.1715445425191967
+Cutoff : 0.21167799098612597
+Selection Parents Percentage : 0.9821887027804898
+K_Tournament : 4
+K_Point : 2
+Seed : 296

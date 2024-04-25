@@ -1,14 +1,19 @@
 package pacman;
 
+import utils.GeneticAlgorithim;
 
 public class Main {
 
-	public static void main(String[] args) {
+	// GOOD SEED: 296
+	private static int seed = 296;
 
-		int seed = 10;
-		PacmanGeneticAlgorithm ga = new PacmanGeneticAlgorithm(seed);
-		PacmanNeuralNetwork nn = ga.search();
-		new Pacman(nn, true, nn.getSeed());
-		
+	public static void watchGameplay() {
+
+		GeneticAlgorithim ga = new PacmanGeneticAlgorithm(seed);
+		new Pacman(ga.search(), true, seed);
+	}
+
+	public static void main(String[] args) {
+		watchGameplay();
 	}
 }

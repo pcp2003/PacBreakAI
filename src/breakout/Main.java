@@ -1,5 +1,7 @@
 package breakout;
 
+import utils.GeneticAlgorithim;
+
 public class Main {
 
     // GOOD SEED: 296
@@ -7,7 +9,7 @@ public class Main {
 
     public static void watchGameplay() {
 
-        GeneticAlgorithm ga = new GeneticAlgorithm(seed, 1);
+        GeneticAlgorithim ga = new BreakoutGeneticAlgorithm(seed);
         new Breakout(ga.search(), seed);
     }
 
