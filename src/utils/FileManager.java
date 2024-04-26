@@ -63,12 +63,19 @@ public class FileManager {
 
                     double avarageFitness = (firstFitness + secondFitness + thirdFitness + fourthFitness + FifthFitness) / 5;
 
-                    if (avarageFitness >= Commons.LeastPointsAccepted) {
-                        parametersList.add(new double[]{
-                                mutationChance, mutationPercentage, cutoff,
-                                selectionParentsPercentage, (double) kTournament, (double) kPoint, (double) seed, avarageFitness
-                        });
-                    }
+                    int LeastPointsAccepted;
+
+                    if (filePath == "randomValuesBreakout.txt")
+                        LeastPointsAccepted = Commons.BreakoutLeastPointsAccepted;
+                    else
+                        LeastPointsAccepted = Commons.PacmanLeastPointsAccepted;
+
+                     if (avarageFitness >= LeastPointsAccepted) {
+                         parametersList.add(new double[]{
+                                 mutationChance, mutationPercentage, cutoff,
+                                 selectionParentsPercentage, (double) kTournament, (double) kPoint, (double) seed, avarageFitness
+                         });
+                     }
 
 
                     // Pular o resto dos valores de fitness para o próximo conjunto de parâmetros

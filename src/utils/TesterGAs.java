@@ -69,6 +69,7 @@ public class TesterGAs {
 
         String randomValuesPath;
         String bestParametersPath;
+        int LeastPointsAccepted;
 
         // Define qual dos jogos está sendo jogado.
 
@@ -76,10 +77,12 @@ public class TesterGAs {
             System.out.println("Playing breakout");
             randomValuesPath = "randomValuesBreakout.txt";
             bestParametersPath = "bestParametersBreakout.txt";
+            LeastPointsAccepted = Commons.BreakoutLeastPointsAccepted;
         } else {
             System.out.println("Playing pacman");
             randomValuesPath = "randomValuesPacman.txt";
             bestParametersPath = "bestParametersPacman.txt";
+            LeastPointsAccepted = Commons.PacmanLeastPointsAccepted;
         }
 
         FileManager FR = new FileManager(randomValuesPath);
@@ -133,7 +136,7 @@ public class TesterGAs {
 
                 FA.appendToFile(" Avarage Fitness = " + avarageFitness);
 
-                if (avarageFitness >= Commons.LeastPointsAccepted) {
+                if (avarageFitness >= LeastPointsAccepted) {
                     resultsList[j] += 1;
                 }
 
@@ -182,7 +185,7 @@ public class TesterGAs {
 
     public static void main(String[] args) {
 
-        addRandomGAToFile(1, 1, "pacman");
+        addRandomGAToFile(1000, 1, "pacman");
 
 
 //        int[] result;

@@ -1,0 +1,1313 @@
+
+Mutation chance : 0.429894049157172
+Mutation Percentage : 0.07028077286510885
+Cutoff : 0.5868358502601059
+Selection Parents Percentage : 0.34633724509148545
+K_Tournament : 3
+K_Point : 3
+Seed : 855
+ Fitness = 397895.0
+ Fitness = 397895.0
+ Fitness = 397895.0
+ Fitness = 397895.0
+ Fitness = 397895.0
+
+Mutation chance : 0.2743854159766381
+Mutation Percentage : 0.4636651650080255
+Cutoff : 0.10451113137691882
+Selection Parents Percentage : 0.18072743338451147
+K_Tournament : 2
+K_Point : 4
+Seed : 16
+ Fitness = 397689.0
+ Fitness = 397689.0
+ Fitness = 397689.0
+ Fitness = 397689.0
+ Fitness = 397689.0
+
+Mutation chance : 0.37845900169990554
+Mutation Percentage : 0.2690674249143133
+Cutoff : 0.9329344813147994
+Selection Parents Percentage : 0.27494702502800483
+K_Tournament : 2
+K_Point : 4
+Seed : 86
+ Fitness = 198455.0
+ Fitness = 198455.0
+ Fitness = 198455.0
+ Fitness = 198455.0
+ Fitness = 198455.0
+
+Mutation chance : 0.09696165822133122
+Mutation Percentage : 0.09091448696204311
+Cutoff : 0.5093593192983393
+Selection Parents Percentage : 0.7644360222853904
+K_Tournament : 5
+K_Point : 2
+Seed : 27
+ Fitness = 298547.0
+ Fitness = 298547.0
+ Fitness = 298547.0
+ Fitness = 298547.0
+ Fitness = 298547.0
+
+Mutation chance : 0.21030932946847197
+Mutation Percentage : 0.2525211207958709
+Cutoff : 0.4391411873319111
+Selection Parents Percentage : 0.7747376124878239
+K_Tournament : 4
+K_Point : 5
+Seed : 730
+ Fitness = 497801.0
+ Fitness = 497801.0
+ Fitness = 497801.0
+ Fitness = 497801.0
+ Fitness = 497801.0
+
+Mutation chance : 0.2277372811014054
+Mutation Percentage : 0.35728153372707533
+Cutoff : 0.5586921438334062
+Selection Parents Percentage : 0.3355576919141697
+K_Tournament : 2
+K_Point : 3
+Seed : 757
+ Fitness = 198317.0
+ Fitness = 198317.0
+ Fitness = 198317.0
+ Fitness = 198317.0
+ Fitness = 198317.0
+
+Mutation chance : 0.28158407063158497
+Mutation Percentage : 0.43040263147030366
+Cutoff : 0.4387627276717714
+Selection Parents Percentage : 0.1852702187664636
+K_Tournament : 3
+K_Point : 3
+Seed : 222
+ Fitness = 697269.0
+ Fitness = 697269.0
+ Fitness = 697269.0
+ Fitness = 697269.0
+ Fitness = 697269.0
+
+Mutation chance : 0.3656518082656468
+Mutation Percentage : 0.38541428994931815
+Cutoff : 0.6052044341556351
+Selection Parents Percentage : 0.1293771783049767
+K_Tournament : 6
+K_Point : 4
+Seed : 526
+ Fitness = 298071.0
+ Fitness = 298071.0
+ Fitness = 298071.0
+ Fitness = 298071.0
+ Fitness = 298071.0
+
+Mutation chance : 0.29012535810089807
+Mutation Percentage : 0.039519075096416105
+Cutoff : 0.9750080816125183
+Selection Parents Percentage : 0.19628654519877692
+K_Tournament : 4
+K_Point : 5
+Seed : 407
+ Fitness = 595147.0
+ Fitness = 595147.0
+ Fitness = 595147.0
+ Fitness = 595147.0
+ Fitness = 595147.0
+
+Mutation chance : 0.033103330887943476
+Mutation Percentage : 0.14961045244542565
+Cutoff : 0.9300201467236652
+Selection Parents Percentage : 0.8678562271652117
+K_Tournament : 2
+K_Point : 5
+Seed : 434
+ Fitness = 897447.0
+ Fitness = 897447.0
+ Fitness = 897447.0
+ Fitness = 897447.0
+ Fitness = 897447.0
+
+Mutation chance : 0.3877235299292519
+Mutation Percentage : 0.3216074342619536
+Cutoff : 0.27655883888577854
+Selection Parents Percentage : 0.7996335590709627
+K_Tournament : 3
+K_Point : 5
+Seed : 368
+ Fitness = 397683.0
+ Fitness = 397683.0
+ Fitness = 397683.0
+ Fitness = 397683.0
+ Fitness = 397683.0
+
+Mutation chance : 0.29713238852995577
+Mutation Percentage : 0.2967859931591428
+Cutoff : 0.9589434177375988
+Selection Parents Percentage : 0.7458841496325773
+K_Tournament : 4
+K_Point : 3
+Seed : 595
+ Fitness = 197953.0
+ Fitness = 197953.0
+ Fitness = 197953.0
+ Fitness = 197953.0
+ Fitness = 197953.0
+
+Mutation chance : 0.45412469781810416
+Mutation Percentage : 0.4483978372030655
+Cutoff : 0.22872849259560263
+Selection Parents Percentage : 0.555857070351572
+K_Tournament : 4
+K_Point : 5
+Seed : 657
+ Fitness = 497459.0
+ Fitness = 497459.0
+ Fitness = 497459.0
+ Fitness = 497459.0
+ Fitness = 497459.0
+
+Mutation chance : 0.3035178284478631
+Mutation Percentage : 0.45876975593144376
+Cutoff : 0.25258130327033146
+Selection Parents Percentage : 0.8844241824427288
+K_Tournament : 4
+K_Point : 3
+Seed : 137
+ Fitness = 395539.0
+ Fitness = 395539.0
+ Fitness = 395539.0
+ Fitness = 395539.0
+ Fitness = 395539.0
+
+Mutation chance : 0.20541191640087625
+Mutation Percentage : 0.5077168011348544
+Cutoff : 0.397192098951058
+Selection Parents Percentage : 0.14843118827320048
+K_Tournament : 3
+K_Point : 4
+Seed : 788
+ Fitness = 297513.0
+ Fitness = 297513.0
+ Fitness = 297513.0
+ Fitness = 297513.0
+ Fitness = 297513.0
+
+Mutation chance : 0.48855713927521205
+Mutation Percentage : 0.2750075680537381
+Cutoff : 0.6493880516682269
+Selection Parents Percentage : 0.1479255643289255
+K_Tournament : 3
+K_Point : 3
+Seed : 363
+ Fitness = 298489.0
+ Fitness = 298489.0
+ Fitness = 298489.0
+ Fitness = 298489.0
+ Fitness = 298489.0
+
+Mutation chance : 0.26868054703661554
+Mutation Percentage : 0.14103947367591885
+Cutoff : 0.5686552244031946
+Selection Parents Percentage : 0.8156860995909452
+K_Tournament : 4
+K_Point : 5
+Seed : 892
+ Fitness = 496417.0
+ Fitness = 496417.0
+ Fitness = 496417.0
+ Fitness = 496417.0
+ Fitness = 496417.0
+
+Mutation chance : 0.12143775963660429
+Mutation Percentage : 0.20941727951354866
+Cutoff : 0.21458074248906298
+Selection Parents Percentage : 0.3761007192867528
+K_Tournament : 2
+K_Point : 3
+Seed : 939
+ Fitness = 396977.0
+ Fitness = 396977.0
+ Fitness = 396977.0
+ Fitness = 396977.0
+ Fitness = 396977.0
+
+Mutation chance : 0.3393960859370049
+Mutation Percentage : 0.05281268764940105
+Cutoff : 0.9317577614326558
+Selection Parents Percentage : 0.869579088558245
+K_Tournament : 5
+K_Point : 5
+Seed : 237
+ Fitness = 397321.0
+ Fitness = 397321.0
+ Fitness = 397321.0
+ Fitness = 397321.0
+ Fitness = 397321.0
+
+Mutation chance : 0.3566348085192197
+Mutation Percentage : 0.24023645116092585
+Cutoff : 0.850711019833634
+Selection Parents Percentage : 0.7192316190435102
+K_Tournament : 4
+K_Point : 3
+Seed : 189
+ Fitness = 198377.0
+ Fitness = 198377.0
+ Fitness = 198377.0
+ Fitness = 198377.0
+ Fitness = 198377.0
+
+Mutation chance : 0.03121938372111637
+Mutation Percentage : 0.49882728015024647
+Cutoff : 0.9628568338115945
+Selection Parents Percentage : 0.5275736688301002
+K_Tournament : 2
+K_Point : 3
+Seed : 533
+ Fitness = 197973.0
+ Fitness = 197973.0
+ Fitness = 197973.0
+ Fitness = 197973.0
+ Fitness = 197973.0
+
+Mutation chance : 0.22976020301620437
+Mutation Percentage : 0.25893206126037094
+Cutoff : 0.6110145497882165
+Selection Parents Percentage : 0.41305469913255466
+K_Tournament : 2
+K_Point : 4
+Seed : 429
+ Fitness = 198377.0
+ Fitness = 198377.0
+ Fitness = 198377.0
+ Fitness = 198377.0
+ Fitness = 198377.0
+
+Mutation chance : 0.07123184757100769
+Mutation Percentage : 0.09192567614390805
+Cutoff : 0.932396362623014
+Selection Parents Percentage : 0.6608614961739652
+K_Tournament : 4
+K_Point : 4
+Seed : 944
+ Fitness = 397835.0
+ Fitness = 397835.0
+ Fitness = 397835.0
+ Fitness = 397835.0
+ Fitness = 397835.0
+
+Mutation chance : 0.5025180569336171
+Mutation Percentage : 0.04696008942020518
+Cutoff : 0.39528588636170314
+Selection Parents Percentage : 0.2537131766845936
+K_Tournament : 5
+K_Point : 5
+Seed : 356
+ Fitness = 497477.0
+ Fitness = 497477.0
+ Fitness = 497477.0
+ Fitness = 497477.0
+ Fitness = 497477.0
+
+Mutation chance : 0.034032108764160345
+Mutation Percentage : 0.19450587118214208
+Cutoff : 0.2707243760217402
+Selection Parents Percentage : 0.4998343257826152
+K_Tournament : 4
+K_Point : 5
+Seed : 95
+ Fitness = 397835.0
+ Fitness = 397835.0
+ Fitness = 397835.0
+ Fitness = 397835.0
+ Fitness = 397835.0
+
+Mutation chance : 0.4746533907447051
+Mutation Percentage : 0.05995053136767447
+Cutoff : 0.8187906016039717
+Selection Parents Percentage : 0.4225531865370954
+K_Tournament : 5
+K_Point : 2
+Seed : 524
+ Fitness = 298813.0
+ Fitness = 298813.0
+ Fitness = 298813.0
+ Fitness = 298813.0
+ Fitness = 298813.0
+
+Mutation chance : 0.2259868138231072
+Mutation Percentage : 0.39584666667789353
+Cutoff : 0.4071469680202444
+Selection Parents Percentage : 0.49737350629457966
+K_Tournament : 6
+K_Point : 1
+Seed : 526
+ Fitness = 397321.0
+ Fitness = 397321.0
+ Fitness = 397321.0
+ Fitness = 397321.0
+ Fitness = 397321.0
+
+Mutation chance : 0.08105937657207028
+Mutation Percentage : 0.17321416582113114
+Cutoff : 0.9220050586689522
+Selection Parents Percentage : 0.7747011623204233
+K_Tournament : 2
+K_Point : 4
+Seed : 68
+ Fitness = 497435.0
+ Fitness = 497435.0
+ Fitness = 497435.0
+ Fitness = 497435.0
+ Fitness = 497435.0
+
+Mutation chance : 0.15869958516718558
+Mutation Percentage : 0.0100494436994819
+Cutoff : 0.21778954036372455
+Selection Parents Percentage : 0.16904941569061116
+K_Tournament : 5
+K_Point : 2
+Seed : 921
+ Fitness = 99259.0
+ Fitness = 99259.0
+ Fitness = 99259.0
+ Fitness = 99259.0
+ Fitness = 99259.0
+
+Mutation chance : 0.24980727998839414
+Mutation Percentage : 0.32497584058479123
+Cutoff : 0.3580910505054865
+Selection Parents Percentage : 0.3558556034070588
+K_Tournament : 3
+K_Point : 5
+Seed : 739
+ Fitness = 198337.0
+ Fitness = 198337.0
+ Fitness = 198337.0
+ Fitness = 198337.0
+ Fitness = 198337.0
+
+Mutation chance : 0.06264442333035085
+Mutation Percentage : 0.047599786788540925
+Cutoff : 0.829186966868821
+Selection Parents Percentage : 0.15518758243705072
+K_Tournament : 2
+K_Point : 2
+Seed : 517
+ Fitness = 497571.0
+ Fitness = 497571.0
+ Fitness = 497571.0
+ Fitness = 497571.0
+ Fitness = 497571.0
+
+Mutation chance : 0.03766330697531361
+Mutation Percentage : 0.4360044739496519
+Cutoff : 0.6531891546029917
+Selection Parents Percentage : 0.9986300868482545
+K_Tournament : 4
+K_Point : 2
+Seed : 24
+ Fitness = 597649.0
+ Fitness = 597649.0
+ Fitness = 597649.0
+ Fitness = 597649.0
+ Fitness = 597649.0
+
+Mutation chance : 0.048667271030246144
+Mutation Percentage : 0.40945500017772185
+Cutoff : 0.6088679237908938
+Selection Parents Percentage : 0.2991784081444812
+K_Tournament : 5
+K_Point : 3
+Seed : 232
+ Fitness = 597827.0
+ Fitness = 597827.0
+ Fitness = 597827.0
+ Fitness = 597827.0
+ Fitness = 597827.0
+
+Mutation chance : 0.03732100012405314
+Mutation Percentage : 0.03870801612201951
+Cutoff : 0.860764110862309
+Selection Parents Percentage : 0.6223923665649772
+K_Tournament : 4
+K_Point : 3
+Seed : 986
+ Fitness = 297683.0
+ Fitness = 297683.0
+ Fitness = 297683.0
+ Fitness = 297683.0
+ Fitness = 297683.0
+
+Mutation chance : 0.1173970719949665
+Mutation Percentage : 0.01235188549420412
+Cutoff : 0.29101545279464414
+Selection Parents Percentage : 0.3859800025652418
+K_Tournament : 2
+K_Point : 5
+Seed : 945
+ Fitness = 297683.0
+ Fitness = 297683.0
+ Fitness = 297683.0
+ Fitness = 297683.0
+ Fitness = 297683.0
+
+Mutation chance : 0.4116627457168699
+Mutation Percentage : 0.18802247290513463
+Cutoff : 0.614964564794225
+Selection Parents Percentage : 0.4206039915136687
+K_Tournament : 2
+K_Point : 4
+Seed : 183
+ Fitness = 297651.0
+ Fitness = 297651.0
+ Fitness = 297651.0
+ Fitness = 297651.0
+ Fitness = 297651.0
+
+Mutation chance : 0.3879325882421746
+Mutation Percentage : 0.27904200124859424
+Cutoff : 0.6371099042937184
+Selection Parents Percentage : 0.7953757893960791
+K_Tournament : 2
+K_Point : 1
+Seed : 244
+ Fitness = 496595.0
+ Fitness = 397307.0
+ Fitness = 397307.0
+ Fitness = 397307.0
+ Fitness = 397307.0
+
+Mutation chance : 0.08036251070462967
+Mutation Percentage : 0.22176622257054562
+Cutoff : 0.7314837767644194
+Selection Parents Percentage : 0.29249408269790933
+K_Tournament : 2
+K_Point : 1
+Seed : 709
+ Fitness = 497701.0
+ Fitness = 497701.0
+ Fitness = 497701.0
+ Fitness = 497701.0
+ Fitness = 497701.0
+
+Mutation chance : 0.48127989265830695
+Mutation Percentage : 0.18112063076826818
+Cutoff : 0.6265273127409595
+Selection Parents Percentage : 0.8400396896620156
+K_Tournament : 5
+K_Point : 5
+Seed : 384
+ Fitness = 396475.0
+ Fitness = 396475.0
+ Fitness = 396475.0
+ Fitness = 396475.0
+ Fitness = 396475.0
+
+Mutation chance : 0.10313575477510893
+Mutation Percentage : 0.29940346328443246
+Cutoff : 0.6782387783939838
+Selection Parents Percentage : 0.7819851462237057
+K_Tournament : 2
+K_Point : 3
+Seed : 512
+ Fitness = 499999.0
+ Fitness = 499999.0
+ Fitness = 499999.0
+ Fitness = 499999.0
+ Fitness = 499999.0
+
+Mutation chance : 0.3469340483345636
+Mutation Percentage : 0.43510955448926797
+Cutoff : 0.4549889108374533
+Selection Parents Percentage : 0.8684086331128724
+K_Tournament : 5
+K_Point : 1
+Seed : 7
+ Fitness = 298203.0
+ Fitness = 298203.0
+ Fitness = 298203.0
+ Fitness = 298203.0
+ Fitness = 298203.0
+
+Mutation chance : 0.16229687094062878
+Mutation Percentage : 0.025906123781189942
+Cutoff : 0.5710979208575844
+Selection Parents Percentage : 0.5691598500391792
+K_Tournament : 3
+K_Point : 4
+Seed : 848
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+
+Mutation chance : 0.40807783170597184
+Mutation Percentage : 0.5059150051111889
+Cutoff : 0.6865604425356313
+Selection Parents Percentage : 0.6200653142051926
+K_Tournament : 5
+K_Point : 5
+Seed : 971
+ Fitness = 498051.0
+ Fitness = 498051.0
+ Fitness = 498051.0
+ Fitness = 498051.0
+ Fitness = 498051.0
+
+Mutation chance : 0.4811847278157687
+Mutation Percentage : 0.2833606016437569
+Cutoff : 0.6228772313315822
+Selection Parents Percentage : 0.8014209965763933
+K_Tournament : 6
+K_Point : 1
+Seed : 856
+ Fitness = 494483.0
+ Fitness = 494483.0
+ Fitness = 494483.0
+ Fitness = 494483.0
+ Fitness = 494483.0
+
+Mutation chance : 0.19953050374771553
+Mutation Percentage : 0.3171813477010837
+Cutoff : 0.1606657435545268
+Selection Parents Percentage : 0.734232310295479
+K_Tournament : 6
+K_Point : 2
+Seed : 549
+ Fitness = 197953.0
+ Fitness = 197953.0
+ Fitness = 197953.0
+ Fitness = 197953.0
+ Fitness = 197953.0
+
+Mutation chance : 0.3855580835802465
+Mutation Percentage : 0.17329786433253985
+Cutoff : 0.8287522498555135
+Selection Parents Percentage : 0.6791841099582002
+K_Tournament : 4
+K_Point : 1
+Seed : 447
+ Fitness = 597109.0
+ Fitness = 597109.0
+ Fitness = 597109.0
+ Fitness = 597109.0
+ Fitness = 597109.0
+
+Mutation chance : 0.3841771368824821
+Mutation Percentage : 0.1421930749982676
+Cutoff : 0.3802073204768931
+Selection Parents Percentage : 0.13666149141598438
+K_Tournament : 5
+K_Point : 5
+Seed : 737
+ Fitness = 198435.0
+ Fitness = 198435.0
+ Fitness = 198435.0
+ Fitness = 198435.0
+ Fitness = 198435.0
+
+Mutation chance : 0.4788543647447574
+Mutation Percentage : 0.504585774628454
+Cutoff : 0.28116479776130443
+Selection Parents Percentage : 0.9538093564268811
+K_Tournament : 3
+K_Point : 4
+Seed : 24
+ Fitness = 598347.0
+ Fitness = 598347.0
+ Fitness = 598347.0
+ Fitness = 598347.0
+ Fitness = 598347.0
+
+Mutation chance : 0.31342984706164206
+Mutation Percentage : 0.4549251631673452
+Cutoff : 0.3340072398252909
+Selection Parents Percentage : 0.5741166949672665
+K_Tournament : 5
+K_Point : 1
+Seed : 654
+ Fitness = 397961.0
+ Fitness = 397961.0
+ Fitness = 397961.0
+ Fitness = 397961.0
+ Fitness = 397961.0
+
+Mutation chance : 0.42937576128005606
+Mutation Percentage : 0.09311311028762696
+Cutoff : 0.184163711135761
+Selection Parents Percentage : 0.7045318208896615
+K_Tournament : 4
+K_Point : 3
+Seed : 131
+ Fitness = 297123.0
+ Fitness = 297123.0
+ Fitness = 297123.0
+ Fitness = 297123.0
+ Fitness = 297123.0
+
+Mutation chance : 0.049476596360192686
+Mutation Percentage : 0.4728144745972132
+Cutoff : 0.17465145846095054
+Selection Parents Percentage : 0.8500924686526768
+K_Tournament : 4
+K_Point : 1
+Seed : 598
+ Fitness = 397519.0
+ Fitness = 397519.0
+ Fitness = 397519.0
+ Fitness = 397519.0
+ Fitness = 397519.0
+
+Mutation chance : 0.35814565419711886
+Mutation Percentage : 0.024959078988735887
+Cutoff : 0.7237300582524708
+Selection Parents Percentage : 0.8265916884117014
+K_Tournament : 2
+K_Point : 5
+Seed : 902
+ Fitness = 497301.0
+ Fitness = 497301.0
+ Fitness = 497301.0
+ Fitness = 497301.0
+ Fitness = 497301.0
+
+Mutation chance : 0.48031829979985907
+Mutation Percentage : 0.18133288272407344
+Cutoff : 0.542463971858387
+Selection Parents Percentage : 0.3017385242760154
+K_Tournament : 4
+K_Point : 5
+Seed : 145
+ Fitness = 297553.0
+ Fitness = 297553.0
+ Fitness = 297553.0
+ Fitness = 297553.0
+ Fitness = 297553.0
+
+Mutation chance : 0.3774844574732944
+Mutation Percentage : 0.26906972163705994
+Cutoff : 0.8497790072732846
+Selection Parents Percentage : 0.3142563696190126
+K_Tournament : 3
+K_Point : 2
+Seed : 802
+ Fitness = 398119.0
+ Fitness = 398119.0
+ Fitness = 398119.0
+ Fitness = 398119.0
+ Fitness = 398119.0
+
+Mutation chance : 0.3450862983420952
+Mutation Percentage : 0.010151344649605811
+Cutoff : 0.24359536592407494
+Selection Parents Percentage : 0.6378386871861769
+K_Tournament : 4
+K_Point : 2
+Seed : 800
+ Fitness = 394733.0
+ Fitness = 394733.0
+ Fitness = 394733.0
+ Fitness = 394733.0
+ Fitness = 394733.0
+
+Mutation chance : 0.5050367530310731
+Mutation Percentage : 0.48813665563937436
+Cutoff : 0.27684751956557574
+Selection Parents Percentage : 0.8658209392778886
+K_Tournament : 4
+K_Point : 5
+Seed : 266
+ Fitness = 497539.0
+ Fitness = 497539.0
+ Fitness = 497539.0
+ Fitness = 497539.0
+ Fitness = 497539.0
+
+Mutation chance : 0.31853351528828727
+Mutation Percentage : 0.37255057998207225
+Cutoff : 0.6433259963967802
+Selection Parents Percentage : 0.25556828078664384
+K_Tournament : 4
+K_Point : 4
+Seed : 544
+ Fitness = 397321.0
+ Fitness = 397321.0
+ Fitness = 397321.0
+ Fitness = 397321.0
+ Fitness = 397321.0
+
+Mutation chance : 0.25701061912140133
+Mutation Percentage : 0.4498548722181371
+Cutoff : 0.31644907905663777
+Selection Parents Percentage : 0.9448573561035232
+K_Tournament : 4
+K_Point : 3
+Seed : 205
+ Fitness = 596645.0
+ Fitness = 596645.0
+ Fitness = 596645.0
+ Fitness = 596645.0
+ Fitness = 596645.0
+
+Mutation chance : 0.3713127926144112
+Mutation Percentage : 0.19000131171763363
+Cutoff : 0.6260186112324785
+Selection Parents Percentage : 0.7306494355200631
+K_Tournament : 3
+K_Point : 1
+Seed : 692
+ Fitness = 398663.0
+ Fitness = 398663.0
+ Fitness = 398663.0
+ Fitness = 398663.0
+ Fitness = 398663.0
+
+Mutation chance : 0.25823948579647443
+Mutation Percentage : 0.26133429259108537
+Cutoff : 0.7553634901817835
+Selection Parents Percentage : 0.43960075429558976
+K_Tournament : 5
+K_Point : 1
+Seed : 444
+ Fitness = 495353.0
+ Fitness = 495353.0
+ Fitness = 495353.0
+ Fitness = 495353.0
+ Fitness = 495353.0
+
+Mutation chance : 0.4639671055885562
+Mutation Percentage : 0.16531185602054166
+Cutoff : 0.8420944021114001
+Selection Parents Percentage : 0.9690027016454831
+K_Tournament : 6
+K_Point : 5
+Seed : 51
+ Fitness = 496971.0
+ Fitness = 496971.0
+ Fitness = 496971.0
+ Fitness = 496971.0
+ Fitness = 496971.0
+
+Mutation chance : 0.3231939794955534
+Mutation Percentage : 0.5077993145576202
+Cutoff : 0.8329750365995788
+Selection Parents Percentage : 0.19828085494191894
+K_Tournament : 4
+K_Point : 2
+Seed : 757
+ Fitness = 198541.0
+ Fitness = 198541.0
+ Fitness = 198541.0
+ Fitness = 198541.0
+ Fitness = 198541.0
+
+Mutation chance : 0.37942050396899224
+Mutation Percentage : 0.14684992756515408
+Cutoff : 0.10509122320991793
+Selection Parents Percentage : 0.38940609115872205
+K_Tournament : 4
+K_Point : 1
+Seed : 61
+ Fitness = 497049.0
+ Fitness = 497049.0
+ Fitness = 497049.0
+ Fitness = 497049.0
+ Fitness = 497049.0
+
+Mutation chance : 0.11680306058700417
+Mutation Percentage : 0.3016484059675056
+Cutoff : 0.4199410868950134
+Selection Parents Percentage : 0.39942311278087195
+K_Tournament : 3
+K_Point : 1
+Seed : 515
+ Fitness = 198377.0
+ Fitness = 198377.0
+ Fitness = 198377.0
+ Fitness = 198377.0
+ Fitness = 198377.0
+
+Mutation chance : 0.25881425239951883
+Mutation Percentage : 0.4648063222860003
+Cutoff : 0.6509814875775302
+Selection Parents Percentage : 0.6944417322538082
+K_Tournament : 4
+K_Point : 3
+Seed : 659
+ Fitness = 397921.0
+ Fitness = 397921.0
+ Fitness = 397921.0
+ Fitness = 397921.0
+ Fitness = 397921.0
+
+Mutation chance : 0.3323119292788401
+Mutation Percentage : 0.21695601355691907
+Cutoff : 0.19495419505396233
+Selection Parents Percentage : 0.7876777258766733
+K_Tournament : 6
+K_Point : 4
+Seed : 676
+ Fitness = 497895.0
+ Fitness = 497895.0
+ Fitness = 497895.0
+ Fitness = 497895.0
+ Fitness = 497895.0
+
+Mutation chance : 0.05374309795573339
+Mutation Percentage : 0.12278472949182233
+Cutoff : 0.6401776961341282
+Selection Parents Percentage : 0.8628541659185495
+K_Tournament : 5
+K_Point : 5
+Seed : 657
+ Fitness = 398841.0
+ Fitness = 398841.0
+ Fitness = 398841.0
+ Fitness = 398841.0
+ Fitness = 398841.0
+
+Mutation chance : 0.07369268945684469
+Mutation Percentage : 0.138602755059628
+Cutoff : 0.8368385292711452
+Selection Parents Percentage : 0.665055084033606
+K_Tournament : 5
+K_Point : 4
+Seed : 220
+ Fitness = 298203.0
+ Fitness = 298203.0
+ Fitness = 298203.0
+ Fitness = 298203.0
+ Fitness = 298203.0
+
+Mutation chance : 0.2895604135853167
+Mutation Percentage : 0.2081317341329667
+Cutoff : 0.5726658173990242
+Selection Parents Percentage : 0.6950086303988818
+K_Tournament : 4
+K_Point : 1
+Seed : 507
+ Fitness = 397647.0
+ Fitness = 397647.0
+ Fitness = 397639.0
+ Fitness = 397639.0
+ Fitness = 397639.0
+
+Mutation chance : 0.31651088424035734
+Mutation Percentage : 0.4465733020677412
+Cutoff : 0.14747200584812115
+Selection Parents Percentage : 0.4562791749716484
+K_Tournament : 4
+K_Point : 3
+Seed : 98
+ Fitness = 198455.0
+ Fitness = 198455.0
+ Fitness = 198455.0
+ Fitness = 198455.0
+ Fitness = 198455.0
+
+Mutation chance : 0.3916856829300008
+Mutation Percentage : 0.23194088837843901
+Cutoff : 0.3042054881473607
+Selection Parents Percentage : 0.6393776834109993
+K_Tournament : 5
+K_Point : 1
+Seed : 122
+ Fitness = 397301.0
+ Fitness = 397301.0
+ Fitness = 397301.0
+ Fitness = 397301.0
+ Fitness = 397301.0
+
+Mutation chance : 0.2768071292123338
+Mutation Percentage : 0.3288957138932939
+Cutoff : 0.5672497357933609
+Selection Parents Percentage : 0.28983746859095283
+K_Tournament : 2
+K_Point : 2
+Seed : 899
+ Fitness = 396389.0
+ Fitness = 396389.0
+ Fitness = 396389.0
+ Fitness = 396389.0
+ Fitness = 396389.0
+
+Mutation chance : 0.2735213987099639
+Mutation Percentage : 0.053181552564906635
+Cutoff : 0.18621303102798403
+Selection Parents Percentage : 0.18493345172045061
+K_Tournament : 3
+K_Point : 4
+Seed : 453
+ Fitness = 297611.0
+ Fitness = 297611.0
+ Fitness = 297611.0
+ Fitness = 297611.0
+ Fitness = 297611.0
+
+Mutation chance : 0.38480880586585353
+Mutation Percentage : 0.2372904746354793
+Cutoff : 0.7768650365710217
+Selection Parents Percentage : 0.35524728080067514
+K_Tournament : 4
+K_Point : 3
+Seed : 552
+ Fitness = 198435.0
+ Fitness = 198435.0
+ Fitness = 198435.0
+ Fitness = 198435.0
+ Fitness = 198435.0
+
+Mutation chance : 0.4172924412876638
+Mutation Percentage : 0.19571810706826487
+Cutoff : 0.3222166955804001
+Selection Parents Percentage : 0.9786998092766518
+K_Tournament : 4
+K_Point : 3
+Seed : 629
+ Fitness = 398349.0
+ Fitness = 398349.0
+ Fitness = 398349.0
+ Fitness = 398349.0
+ Fitness = 398349.0
+
+Mutation chance : 0.14974280361795794
+Mutation Percentage : 0.3807092969963598
+Cutoff : 0.8863879944538652
+Selection Parents Percentage : 0.919919870522342
+K_Tournament : 4
+K_Point : 3
+Seed : 57
+ Fitness = 397123.0
+ Fitness = 397123.0
+ Fitness = 397123.0
+ Fitness = 397123.0
+ Fitness = 397123.0
+
+Mutation chance : 0.06607097452800796
+Mutation Percentage : 0.08056840589088164
+Cutoff : 0.1482757841262941
+Selection Parents Percentage : 0.9590320418751378
+K_Tournament : 6
+K_Point : 4
+Seed : 592
+ Fitness = 397597.0
+ Fitness = 397597.0
+ Fitness = 397597.0
+ Fitness = 397597.0
+ Fitness = 397597.0
+
+Mutation chance : 0.09771483601904628
+Mutation Percentage : 0.420354335292475
+Cutoff : 0.6818685275801146
+Selection Parents Percentage : 0.77608469814075
+K_Tournament : 2
+K_Point : 5
+Seed : 6
+ Fitness = 498285.0
+ Fitness = 498285.0
+ Fitness = 498285.0
+ Fitness = 498283.0
+ Fitness = 498283.0
+
+Mutation chance : 0.18560308563080669
+Mutation Percentage : 0.1306410015300321
+Cutoff : 0.7042639288931949
+Selection Parents Percentage : 0.30423219136346435
+K_Tournament : 4
+K_Point : 5
+Seed : 441
+ Fitness = 297611.0
+ Fitness = 297611.0
+ Fitness = 297611.0
+ Fitness = 297611.0
+ Fitness = 297611.0
+
+Mutation chance : 0.25472378005956525
+Mutation Percentage : 0.11399625291572256
+Cutoff : 0.2259262465534198
+Selection Parents Percentage : 0.22407039355600555
+K_Tournament : 2
+K_Point : 5
+Seed : 876
+ Fitness = 397085.0
+ Fitness = 397085.0
+ Fitness = 397085.0
+ Fitness = 397085.0
+ Fitness = 397085.0
+
+Mutation chance : 0.2840619424839852
+Mutation Percentage : 0.24197492375987872
+Cutoff : 0.9733928628290085
+Selection Parents Percentage : 0.895703283052772
+K_Tournament : 3
+K_Point : 4
+Seed : 748
+ Fitness = 598087.0
+ Fitness = 598087.0
+ Fitness = 598087.0
+ Fitness = 598087.0
+ Fitness = 598087.0
+
+Mutation chance : 0.3724810926533203
+Mutation Percentage : 0.18693102218118268
+Cutoff : 0.38884901783344494
+Selection Parents Percentage : 0.7744051924431334
+K_Tournament : 4
+K_Point : 5
+Seed : 907
+ Fitness = 594267.0
+ Fitness = 594267.0
+ Fitness = 594267.0
+ Fitness = 594267.0
+ Fitness = 594267.0
+
+Mutation chance : 0.17695565808254043
+Mutation Percentage : 0.39616833385524036
+Cutoff : 0.17404869160928066
+Selection Parents Percentage : 0.60251327986395
+K_Tournament : 2
+K_Point : 4
+Seed : 32
+ Fitness = 596167.0
+ Fitness = 596167.0
+ Fitness = 596167.0
+ Fitness = 596167.0
+ Fitness = 596167.0
+
+Mutation chance : 0.17438129194520868
+Mutation Percentage : 0.37876376123363803
+Cutoff : 0.7890985031136971
+Selection Parents Percentage : 0.8106789170003382
+K_Tournament : 6
+K_Point : 2
+Seed : 529
+ Fitness = 497597.0
+ Fitness = 497597.0
+ Fitness = 497597.0
+ Fitness = 497597.0
+ Fitness = 497597.0
+
+Mutation chance : 0.24702050236690276
+Mutation Percentage : 0.3466789026432258
+Cutoff : 0.4756803459502329
+Selection Parents Percentage : 0.9844398252765885
+K_Tournament : 6
+K_Point : 4
+Seed : 448
+ Fitness = 497311.0
+ Fitness = 497311.0
+ Fitness = 497311.0
+ Fitness = 497311.0
+ Fitness = 497311.0
+
+Mutation chance : 0.29739761764817607
+Mutation Percentage : 0.048603662078536385
+Cutoff : 0.968359399187825
+Selection Parents Percentage : 0.5957795428356155
+K_Tournament : 5
+K_Point : 4
+Seed : 988
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+
+Mutation chance : 0.05101681818941305
+Mutation Percentage : 0.3752582448440954
+Cutoff : 0.10378975829926063
+Selection Parents Percentage : 0.7030108846307548
+K_Tournament : 5
+K_Point : 5
+Seed : 667
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+
+Mutation chance : 0.4107910523862432
+Mutation Percentage : 0.27054480827782335
+Cutoff : 0.3973549943994512
+Selection Parents Percentage : 0.34075435833965706
+K_Tournament : 2
+K_Point : 3
+Seed : 885
+ Fitness = 397683.0
+ Fitness = 397683.0
+ Fitness = 397683.0
+ Fitness = 397683.0
+ Fitness = 397683.0
+
+Mutation chance : 0.11626626416943385
+Mutation Percentage : 0.22852871917187145
+Cutoff : 0.9106020959846617
+Selection Parents Percentage : 0.9168696861446972
+K_Tournament : 2
+K_Point : 4
+Seed : 574
+ Fitness = 597839.0
+ Fitness = 398111.0
+ Fitness = 398111.0
+ Fitness = 398111.0
+ Fitness = 398111.0
+
+Mutation chance : 0.31004150217292537
+Mutation Percentage : 0.10381767672101987
+Cutoff : 0.16544860878410006
+Selection Parents Percentage : 0.7184552327000051
+K_Tournament : 2
+K_Point : 1
+Seed : 807
+ Fitness = 298903.0
+ Fitness = 298903.0
+ Fitness = 298903.0
+ Fitness = 298903.0
+ Fitness = 298903.0
+
+Mutation chance : 0.1925361718798037
+Mutation Percentage : 0.3484000176300643
+Cutoff : 0.9210109923824935
+Selection Parents Percentage : 0.5326215190820777
+K_Tournament : 4
+K_Point : 3
+Seed : 528
+ Fitness = 397283.0
+ Fitness = 397283.0
+ Fitness = 397283.0
+ Fitness = 397283.0
+ Fitness = 397283.0
+
+Mutation chance : 0.17524101817709165
+Mutation Percentage : 0.3669136231291271
+Cutoff : 0.5249792696868486
+Selection Parents Percentage : 0.48955271908861986
+K_Tournament : 3
+K_Point : 5
+Seed : 121
+ Fitness = 198435.0
+ Fitness = 198435.0
+ Fitness = 198435.0
+ Fitness = 198435.0
+ Fitness = 198435.0
+
+Mutation chance : 0.48495793935204795
+Mutation Percentage : 0.015978514300597817
+Cutoff : 0.40400378707817663
+Selection Parents Percentage : 0.3548474659829084
+K_Tournament : 4
+K_Point : 2
+Seed : 981
+ Fitness = 398229.0
+ Fitness = 398229.0
+ Fitness = 398229.0
+ Fitness = 398229.0
+ Fitness = 398229.0
+
+Mutation chance : 0.3270952560579408
+Mutation Percentage : 0.09094523270583192
+Cutoff : 0.7025133578787499
+Selection Parents Percentage : 0.30303525582991386
+K_Tournament : 6
+K_Point : 4
+Seed : 854
+ Fitness = 498479.0
+ Fitness = 498479.0
+ Fitness = 498479.0
+ Fitness = 498479.0
+ Fitness = 498479.0
+
+Mutation chance : 0.4646207792838281
+Mutation Percentage : 0.2456335205293
+Cutoff : 0.5825532560294976
+Selection Parents Percentage : 0.12571446644325002
+K_Tournament : 3
+K_Point : 2
+Seed : 955
+ Fitness = 99259.0
+ Fitness = 99259.0
+ Fitness = 99259.0
+ Fitness = 99259.0
+ Fitness = 99259.0
+
+Mutation chance : 0.4452034190637879
+Mutation Percentage : 0.4970145320826493
+Cutoff : 0.9387013000792098
+Selection Parents Percentage : 0.7891159920594899
+K_Tournament : 4
+K_Point : 3
+Seed : 9
+ Fitness = 597397.0
+ Fitness = 597397.0
+ Fitness = 597397.0
+ Fitness = 597397.0
+ Fitness = 597397.0
+
+Mutation chance : 0.3076107086770486
+Mutation Percentage : 0.09801276255947937
+Cutoff : 0.7563859650815495
+Selection Parents Percentage : 0.7558879953431349
+K_Tournament : 5
+K_Point : 4
+Seed : 483
+ Fitness = 397703.0
+ Fitness = 397703.0
+ Fitness = 397703.0
+ Fitness = 397703.0
+ Fitness = 397703.0
+
+Mutation chance : 0.46440856307414824
+Mutation Percentage : 0.23590707595375093
+Cutoff : 0.4464653788826466
+Selection Parents Percentage : 0.24034486409974642
+K_Tournament : 3
+K_Point : 1
+Seed : 75
+ Fitness = 498033.0
+ Fitness = 498033.0
+ Fitness = 498033.0
+ Fitness = 498033.0
+ Fitness = 498033.0
+
+Mutation chance : 0.4869286295198968
+Mutation Percentage : 0.3689012450331959
+Cutoff : 0.33071418129154734
+Selection Parents Percentage : 0.7725655323332977
+K_Tournament : 4
+K_Point : 3
+Seed : 298
+ Fitness = 696919.0
+ Fitness = 696919.0
+ Fitness = 696919.0
+ Fitness = 696919.0
+ Fitness = 696919.0
+
+Mutation chance : 0.33659818460878366
+Mutation Percentage : 0.1466727638233476
+Cutoff : 0.7190609897108564
+Selection Parents Percentage : 0.8539439151803967
+K_Tournament : 2
+K_Point : 1
+Seed : 20
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+ Fitness = 297835.0
+
+Mutation chance : 0.03542948608565171
+Mutation Percentage : 0.3321373404764537
+Cutoff : 0.5400614293683758
+Selection Parents Percentage : 0.812764151399145
+K_Tournament : 2
+K_Point : 4
+Seed : 432
+ Fitness = 496905.0
+ Fitness = 496905.0
+ Fitness = 496905.0
+ Fitness = 496905.0
+ Fitness = 496905.0
