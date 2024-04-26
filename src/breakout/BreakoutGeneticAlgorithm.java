@@ -11,9 +11,9 @@ import java.util.Random;
 public class BreakoutGeneticAlgorithm extends GeneticAlgorithm {
 
 
-    public BreakoutGeneticAlgorithm(int seed) {
+    public BreakoutGeneticAlgorithm() {
 
-        super(Commons.MUTATION_CHANCE_BREAKOUT, Commons.MUTATION_PERCENTAGE_BREAKOUT, Commons.CUTOFF_BREAKOUT, Commons.SELECTION_PARENTS_PERCENTAGE_BREAKOUT, Commons.k_tournament_BREAKOUT, Commons.k_point_BREAKOUT, seed);
+        super(Commons.MUTATION_CHANCE_BREAKOUT, Commons.MUTATION_PERCENTAGE_BREAKOUT, Commons.CUTOFF_BREAKOUT, Commons.SELECTION_PARENTS_PERCENTAGE_BREAKOUT, Commons.k_tournament_BREAKOUT, Commons.k_point_BREAKOUT, Commons.seed_BREAKOUT);
 
         generatePopulation();
 
@@ -21,27 +21,26 @@ public class BreakoutGeneticAlgorithm extends GeneticAlgorithm {
 
     // Constructors abaixo devem ser, idealmente, utilizados apenas na classe TesterGAs. Obrigado pela atenção, deus te abençoe.
 
-    public BreakoutGeneticAlgorithm(int seed, int mode) {
+    // Constructor que gera parâmetros random!
+    public BreakoutGeneticAlgorithm(int seed) {
 
         super(seed);
 
         generatePopulation();
 
+        FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesBreakout.txt");
 
-        if (mode == Commons.BREAKOUT )
-            FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesBreakout.txt");
-        else throw new IllegalArgumentException("Não é possível utilizar um modo diferente do breakout");
     }
 
-    public BreakoutGeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed, int mode) {
+    // Constructor que gera uma GA a partir de parâmetros passados. Guarda esses parâmetros no ficheiro!
+    public BreakoutGeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed) {
 
         super(MUTATION_CHANCE, MUTATION_PERCENTAGE, CUTOFF, SELECTION_PARENTS_PERCENTAGE, k_tournament, k_Point, seed);
 
         generatePopulation();
 
-        if (mode == Commons.BREAKOUT )
-            FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "bestParametersBreakout.txt");
-        else throw new IllegalArgumentException("Não é possível utilizar um modo diferente do breakout");
+        FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "bestParametersBreakout.txt");
+
     }
 
     public NeuronalNetwork search() {

@@ -9,10 +9,9 @@ import java.util.Arrays;
 
 public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
 
-    public PacmanGeneticAlgorithm(int seed) {
+    public PacmanGeneticAlgorithm() {
 
-        super(Commons.MUTATION_CHANCE_PACMAN, Commons.MUTATION_PERCENTAGE_PACMAN, Commons.CUTOFF_PACMAN, Commons.SELECTION_PARENTS_PERCENTAGE_PACMAN, Commons.k_tournament_PACMAN, Commons.k_point_PACMAN, seed);
-
+        super(Commons.MUTATION_CHANCE_PACMAN, Commons.MUTATION_PERCENTAGE_PACMAN, Commons.CUTOFF_PACMAN, Commons.SELECTION_PARENTS_PERCENTAGE_PACMAN, Commons.k_tournament_PACMAN, Commons.k_point_PACMAN, Commons.seed_PACMAN);
 
         generatePopulation();
 
@@ -20,27 +19,27 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
 
     // Constructors abaixo devem ser, idealmente, utilizados apenas na classe TesterGAs. Obrigado pela atenção, deus te abençoe.
 
-    public PacmanGeneticAlgorithm(int seed, int mode) {
+    // Constructor que gera parâmetros random!
+    public PacmanGeneticAlgorithm(int seed) {
 
         super(seed);
 
         generatePopulation();
 
+        FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesPacman.txt");
 
-        if (mode == Commons.PACMAN )
-            FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesPacman.txt");
-        else throw new IllegalArgumentException("Não é possível utilizar um modo diferente do pacman");
+
     }
 
-    public PacmanGeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed, int mode) {
+    // Constructor que gera uma GA a partir de parâmetros passados. Guarda esses parâmetros no ficheiro!
+    public PacmanGeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed) {
 
         super(MUTATION_CHANCE, MUTATION_PERCENTAGE, CUTOFF, SELECTION_PARENTS_PERCENTAGE, k_tournament, k_Point, seed);
 
         generatePopulation();
 
-        if (mode == Commons.PACMAN)
-            FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesPacman.txt");
-        else throw new IllegalArgumentException("Não é possível utilizar um modo diferente do pacman");
+        FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "bestParametersPacman.txt");
+
     }
 
     public NeuronalNetwork search() {

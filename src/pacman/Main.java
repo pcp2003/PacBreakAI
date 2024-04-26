@@ -1,19 +1,17 @@
 package pacman;
 
+import utils.Commons;
 import utils.GeneticAlgorithm;
 
 public class Main {
 
-	// GOOD SEED: 296
-	private static int seed = 296;
+    public static void watchGameplay() {
 
-	public static void watchGameplay() {
+        GeneticAlgorithm ga = new PacmanGeneticAlgorithm();
+        new Pacman(ga.search(), true, Commons.seed_PACMAN);
+    }
 
-		GeneticAlgorithm ga = new PacmanGeneticAlgorithm(seed);
-		new Pacman(ga.search(), true, seed);
-	}
-
-	public static void main(String[] args) {
-		watchGameplay();
-	}
+    public static void main(String[] args) {
+        watchGameplay();
+    }
 }

@@ -1,2 +1,1 @@
- Avarage Fitness = 398111.0
- Avarage Fitness = 496865.0
+

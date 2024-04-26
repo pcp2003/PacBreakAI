@@ -19,10 +19,6 @@ public abstract class GeneticAlgorithm {
     public int seed;
     public NeuronalNetwork[] population;
 
-    // Constructors abaixo devem ser, idealmente, utilizados apenas na classe TesterGAs. Obrigado pela atenção, deus te abençoe.
-
-    // O contructor abaixo pode ser utilizado no [mode == 0 -> apenas gera uma GA aleatória, mode == COMMONS.BREAKOUT -> modo de teste do BREAKOUT (guarda no ficheiro | apenas deve ser utilizado em TestesGA), mode == COMMONS.PACMAN -> modo de teste do PACMAN (guarda no ficheiro | apenas deve ser utilizado em TestesGA) ]
-
     public GeneticAlgorithm(int seed) {
 
         this.population = new NeuronalNetwork[POPULATION_SIZE];
@@ -54,11 +50,8 @@ public abstract class GeneticAlgorithm {
         this.k_point = ra;
 
 
-
     }
-
-    // O contructor abaixo pode ser utilizado no [mode == COMMONS.BREAKOUT -> modo de teste do BREAKOUT (guarda no ficheiro | apenas deve ser utilizado em TestesGA), mode == COMMONS.PACMAN -> modo de teste do PACMAN (guarda no ficheiro | apenas deve ser utilizado em TestesGA) ]
-
+    
     public GeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed) {
 
         this.population = new NeuronalNetwork[POPULATION_SIZE];

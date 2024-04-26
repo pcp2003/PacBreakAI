@@ -1,0 +1,13 @@
+
+Mutation chance : 0.5003139988272268
+Mutation Percentage : 0.1527386025286525
+Cutoff : 0.5985126294449783
+Selection Parents Percentage : 0.10539578244180853
+K_Tournament : 4
+K_Point : 1
+Seed : 634
+ Fitness = 55002.0
+ Fitness = 55002.0
+ Fitness = 55002.0
+ Fitness = 55002.0
+ Fitness = 55002.0

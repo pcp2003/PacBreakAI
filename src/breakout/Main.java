@@ -1,16 +1,14 @@
 package breakout;
 
+import utils.Commons;
 import utils.GeneticAlgorithm;
 
 public class Main {
 
-    // GOOD SEED: 296
-    private static int seed = 296;
-
     public static void watchGameplay() {
 
-        GeneticAlgorithm ga = new BreakoutGeneticAlgorithm(seed);
-        new Breakout(ga.search(), seed);
+        GeneticAlgorithm ga = new BreakoutGeneticAlgorithm();
+        new Breakout(ga.search(), Commons.seed_BREAKOUT);
     }
 
     public static void main(String[] args) {

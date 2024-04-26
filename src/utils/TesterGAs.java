@@ -31,9 +31,9 @@ public class TesterGAs {
                 FileManager FA;
                 GeneticAlgorithm ga;
 
-                if(game.equals("breakout")) {
+                if (game.equals("breakout")) {
 
-                    ga = new BreakoutGeneticAlgorithm(seed, Commons.BREAKOUT);
+                    ga = new BreakoutGeneticAlgorithm(seed);
 
                     BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
                     b.setSeed(seed);
@@ -41,7 +41,11 @@ public class TesterGAs {
 
                     FA = new FileManager("randomValuesBreakout.txt");
                 } else {
-                    ga = new PacmanGeneticAlgorithm(seed, Commons.PACMAN);
+
+                    if (!game.equals("pacman"))
+                        throw new IllegalArgumentException("Jogo não existe tente (pacman) ou (breakout)");
+
+                    ga = new PacmanGeneticAlgorithm(seed);
 
                     PacmanBoard b = new PacmanBoard(ga.search(), false, seed);
                     b.setSeed(seed);
@@ -65,20 +69,17 @@ public class TesterGAs {
 
         String randomValuesPath;
         String bestParametersPath;
-        int mode;
 
         // Define qual dos jogos está sendo jogado.
 
-        if (game.equals("breakout")){
+        if (game.equals("breakout")) {
             System.out.println("Playing breakout");
             randomValuesPath = "randomValuesBreakout.txt";
             bestParametersPath = "bestParametersBreakout.txt";
-            mode = Commons.BREAKOUT;
-        }else{
+        } else {
             System.out.println("Playing pacman");
             randomValuesPath = "randomValuesPacman.txt";
             bestParametersPath = "bestParametersPacman.txt";
-            mode = Commons.PACMAN;
         }
 
         FileManager FR = new FileManager(randomValuesPath);
@@ -103,17 +104,17 @@ public class TesterGAs {
 
                 GeneticAlgorithm ga;
                 FileManager FA = new FileManager(bestParametersPath);
-                System.out.println(" Modo : " + mode);
-                System.out.println(game);
-                if(game.equals("breakout")){
+                System.out.println("-------------------" + game + "-------------------");
 
-                    ga = new BreakoutGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed, mode);
+                if (game.equals("breakout")) {
+
+                    ga = new BreakoutGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed);
 
                     BreakoutBoard b = new BreakoutBoard(ga.search(), true, seed);
                     b.setSeed(seed);
                     b.runSimulation();
                 } else {
-                    ga = new PacmanGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed, mode);
+                    ga = new PacmanGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed);
 
                     BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
                     b.setSeed(seed);
@@ -149,7 +150,17 @@ public class TesterGAs {
     // Se não encontrar, ele preenche o ficheiro (randomValuesPath) com random values, para originar um novo best parameters que
     // , possivelmente, possuira individous que pontuem positivamente e passem o finalTest.
 
-    public static void finalTest(int[] resultList, String randomValuesPath) {
+    public static void finalTest(int[] resultList, String game) {
+
+        String randomValuesPath;
+
+        if (game.equals("breakout")) {
+            randomValuesPath = "randomValuesBreakout.txt";
+        } else if (game.equals("pacman")) {
+            randomValuesPath = "randomValuesPacman.txt";
+        } else {
+            throw new IllegalArgumentException("Esse jogo não existe!");
+        }
 
         boolean found = false;
 
@@ -160,7 +171,7 @@ public class TesterGAs {
             resultList = testBestParameters(10, randomValuesPath);
 
             for (int i = 0; i != resultList.length; i++) {
-                if (resultList[i] >= 7)
+                if (resultList[i] >= 3)
                     found = true;
                 System.out.println("i : " + resultList[i]);
             }
@@ -171,16 +182,16 @@ public class TesterGAs {
 
     public static void main(String[] args) {
 
-        //addRandomGAToFile(2, 2, "pacman");
+        addRandomGAToFile(1, 1, "pacman");
 
 
-        int[] result;
-
-        result = testBestParameters(2, "pacman");
-
-        for (int i = 0; i != result.length; i++) {
-            System.out.print(result[i]);
-        }
+//        int[] result;
+//
+//        result = testBestParameters(2, "pacman");
+//
+//        for (int i = 0; i != result.length; i++) {
+//            System.out.print(result[i]);
+//        }
 
     }
 }
