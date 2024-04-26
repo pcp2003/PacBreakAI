@@ -26,12 +26,10 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
 
         generatePopulation();
 
-        if (mode == Commons.PACMAN)
-            throw new IllegalArgumentException("Não é possível utilizar o modo Pacman durante o breakout");
 
-        if (mode == Commons.BREAKOUT )
-            FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesBreakout.txt");
-
+        if (mode == Commons.PACMAN )
+            FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesPacman.txt");
+        else throw new IllegalArgumentException("Não é possível utilizar um modo diferente do pacman");
     }
 
     public PacmanGeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed, int mode) {
@@ -41,11 +39,8 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
         generatePopulation();
 
         if (mode == Commons.PACMAN)
-            throw new IllegalArgumentException("Não é possível utilizar o modo Pacman durante o breakout");
-
-        if (mode == Commons.BREAKOUT )
-            FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesBreakout.txt");
-
+            FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesPacman.txt");
+        else throw new IllegalArgumentException("Não é possível utilizar um modo diferente do pacman");
     }
 
     public NeuronalNetwork search() {

@@ -70,6 +70,7 @@ public class FileManager {
                         });
                     }
 
+
                     // Pular o resto dos valores de fitness para o próximo conjunto de parâmetros
                     reader.readLine();
                 }

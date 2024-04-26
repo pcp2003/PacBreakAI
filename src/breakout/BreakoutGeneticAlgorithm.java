@@ -30,7 +30,7 @@ public class BreakoutGeneticAlgorithm extends GeneticAlgorithm {
 
         if (mode == Commons.BREAKOUT )
             FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "randomValuesBreakout.txt");
-        else throw new IllegalArgumentException("Não é possível utilizar o modo Pacman durante o breakout");
+        else throw new IllegalArgumentException("Não é possível utilizar um modo diferente do breakout");
     }
 
     public BreakoutGeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed, int mode) {
@@ -41,7 +41,7 @@ public class BreakoutGeneticAlgorithm extends GeneticAlgorithm {
 
         if (mode == Commons.BREAKOUT )
             FileManager.saveParameters(this.MUTATION_CHANCE, this.MUTATION_PERCENTAGE, this.CUTOFF, this.SELECTION_PARENTS_PERCENTAGE, this.k_tournament, this.k_point, this.seed, "bestParametersBreakout.txt");
-        else throw new IllegalArgumentException("Não é possível utilizar o modo Pacman durante o breakout");
+        else throw new IllegalArgumentException("Não é possível utilizar um modo diferente do breakout");
     }
 
     public NeuronalNetwork search() {

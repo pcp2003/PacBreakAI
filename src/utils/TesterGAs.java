@@ -41,7 +41,7 @@ public class TesterGAs {
 
                     FA = new FileManager("randomValuesBreakout.txt");
                 } else {
-                    ga = new PacmanGeneticAlgorithm(seed);
+                    ga = new PacmanGeneticAlgorithm(seed, Commons.PACMAN);
 
                     PacmanBoard b = new PacmanBoard(ga.search(), false, seed);
                     b.setSeed(seed);
@@ -171,11 +171,12 @@ public class TesterGAs {
 
     public static void main(String[] args) {
 
-        //addRandomGAToFile(2, 1, "breakout");
+        //addRandomGAToFile(2, 2, "pacman");
+
 
         int[] result;
 
-        result = testBestParameters(2, "breakout");
+        result = testBestParameters(2, "pacman");
 
         for (int i = 0; i != result.length; i++) {
             System.out.print(result[i]);
