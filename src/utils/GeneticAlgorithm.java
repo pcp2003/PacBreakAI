@@ -51,7 +51,7 @@ public abstract class GeneticAlgorithm {
 
 
     }
-    
+
     public GeneticAlgorithm(double MUTATION_CHANCE, double MUTATION_PERCENTAGE, double CUTOFF, double SELECTION_PARENTS_PERCENTAGE, double k_tournament, double k_Point, double seed) {
 
         this.population = new NeuronalNetwork[POPULATION_SIZE];

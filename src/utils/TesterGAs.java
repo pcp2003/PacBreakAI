@@ -65,7 +65,9 @@ public class TesterGAs {
         }
     }
 
-    public static int[] testBestParameters(int NrOfSeedsTested, String game) {
+    // Considerando um GA = X com pontuação(X) = 10, testBestParameters verifica a consistencia da pontuação(X) em NrOfTimesTested tentativas para a MESMA seed que pontuou 10.
+
+    public static int[] testBestParameters(int NrOfTimesTested, String game) {
 
         String randomValuesPath;
         String bestParametersPath;
@@ -98,10 +100,7 @@ public class TesterGAs {
         }
 
 
-        for (int i = 0; i != NrOfSeedsTested; i++) {
-
-
-            int seed = (int) ((Math.random() * MaxSeed) + 1);
+        for (int i = 0; i != NrOfTimesTested; i++) {
 
             for (int j = 0; j != bestParameters.size(); j++) {
 
@@ -111,12 +110,17 @@ public class TesterGAs {
 
                 if (game.equals("breakout")) {
 
+                    int seed = (int) bestParametersArray[j][6];
+
                     ga = new BreakoutGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed);
 
                     BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
                     b.setSeed(seed);
                     b.runSimulation();
                 } else {
+
+                    int seed = (int) bestParametersArray[j][6];
+
                     ga = new PacmanGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed);
 
                     PacmanBoard p = new PacmanBoard(ga.search(), false, seed);
@@ -145,41 +149,6 @@ public class TesterGAs {
         }
 
         return resultsList;
-    }
-
-    // Pega os melhores parametros e fica num loop enquanto não encontrar um conjunto de parametros que
-    // pontue >= 600000 em 7 / 10 seeds
-
-    // Se não encontrar, ele preenche o ficheiro (randomValuesPath) com random values, para originar um novo best parameters que
-    // , possivelmente, possuira individous que pontuem positivamente e passem o finalTest.
-
-    public static void finalTest(int[] resultList, String game) {
-
-        String randomValuesPath;
-
-        if (game.equals("breakout")) {
-            randomValuesPath = "randomValuesBreakout.txt";
-        } else if (game.equals("pacman")) {
-            randomValuesPath = "randomValuesPacman.txt";
-        } else {
-            throw new IllegalArgumentException("Esse jogo não existe!");
-        }
-
-        boolean found = false;
-
-        while (!found) {
-
-            addRandomGAToFile(Commons.NrOfSeedsTested, Commons.NrOfGATested, randomValuesPath);
-
-            resultList = testBestParameters(10, randomValuesPath);
-
-            for (int i = 0; i != resultList.length; i++) {
-                if (resultList[i] >= 3)
-                    found = true;
-                System.out.println("i : " + resultList[i]);
-            }
-
-        }
     }
 
 
