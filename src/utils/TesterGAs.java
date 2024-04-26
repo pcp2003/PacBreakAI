@@ -113,15 +113,15 @@ public class TesterGAs {
 
                     ga = new BreakoutGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed);
 
-                    BreakoutBoard b = new BreakoutBoard(ga.search(), true, seed);
+                    BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
                     b.setSeed(seed);
                     b.runSimulation();
                 } else {
                     ga = new PacmanGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed);
 
-                    BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
-                    b.setSeed(seed);
-                    b.runSimulation();
+                    PacmanBoard p = new PacmanBoard(ga.search(), false, seed);
+                    p.setSeed(seed);
+                    p.runSimulation();
                 }
 
 
@@ -185,16 +185,16 @@ public class TesterGAs {
 
     public static void main(String[] args) {
 
-        addRandomGAToFile(1000, 1, "pacman");
+//        addRandomGAToFile(1000, 1, "pacman");
 
 
-//        int[] result;
-//
-//        result = testBestParameters(2, "pacman");
-//
-//        for (int i = 0; i != result.length; i++) {
-//            System.out.print(result[i]);
-//        }
+        int[] result;
+
+        result = testBestParameters(1, "pacman");
+
+        for (int i = 0; i != result.length; i++) {
+            System.out.print(result[i]);
+        }
 
     }
 }
