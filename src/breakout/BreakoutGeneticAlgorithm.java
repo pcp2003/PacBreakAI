@@ -23,7 +23,7 @@ public class BreakoutGeneticAlgorithm extends GeneticAlgorithm {
 
     public BreakoutGeneticAlgorithm(int seed, int mode) {
 
-        super(seed, mode);
+        super(seed);
 
         generatePopulation();
 

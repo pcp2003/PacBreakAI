@@ -23,7 +23,7 @@ public abstract class GeneticAlgorithm {
 
     // O contructor abaixo pode ser utilizado no [mode == 0 -> apenas gera uma GA aleatória, mode == COMMONS.BREAKOUT -> modo de teste do BREAKOUT (guarda no ficheiro | apenas deve ser utilizado em TestesGA), mode == COMMONS.PACMAN -> modo de teste do PACMAN (guarda no ficheiro | apenas deve ser utilizado em TestesGA) ]
 
-    public GeneticAlgorithm(int seed, int mode) {
+    public GeneticAlgorithm(int seed) {
 
         this.population = new NeuronalNetwork[POPULATION_SIZE];
 

@@ -22,7 +22,7 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
 
     public PacmanGeneticAlgorithm(int seed, int mode) {
 
-        super(seed, mode);
+        super(seed);
 
         generatePopulation();
 
