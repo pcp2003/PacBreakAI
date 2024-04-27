@@ -75,7 +75,7 @@ public interface Commons {
     public static final double SELECTION_PARENTS_PERCENTAGE_PACMAN = 0.2;
     public static final int k_tournament_PACMAN = 5;
     public static final int k_point_PACMAN = 3;
-    public static final int seed_PACMAN = 1;
+    public static final int seed_PACMAN = 3113;
 
 
     // FILEMANAGER AND TESTER
