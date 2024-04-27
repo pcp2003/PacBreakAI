@@ -160,3 +160,11 @@ K_Tournament : 5
 K_Point : 1
 Seed : 274
  Avarage Fitness = 65001.0
+
+Mutation chance : 0.2263540575551128
+Mutation Percentage : 0.1029761172164834
+Cutoff : 0.2802919789701388
+Selection Parents Percentage : 0.2881334545148301
+K_Tournament : 2
+K_Point : 1
+Seed : 545

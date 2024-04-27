@@ -31,7 +31,7 @@ public interface Commons {
     public static final double SELECTION_PARENTS_PERCENTAGE_BREAKOUT = 0.8652187029205634; //0.2
     public static final int k_tournament_BREAKOUT = 6; //5
     public static final int k_point_BREAKOUT = 4; //3
-    public static final int seed_BREAKOUT = 45; // 296
+    public static final int seed_BREAKOUT = 296; // 296
 
     /*
     Mutation chance : 0.45938064251444644
@@ -69,9 +69,9 @@ public interface Commons {
     public static final int PACMAN_HIDDEN_LAYER = 2;//(int) ((PACMAN_STATE_SIZE+PACMAN_NUM_ACTIONS)/2);s
     public static final int PACMAN_NETWORK_SIZE = (PACMAN_STATE_SIZE * PACMAN_HIDDEN_LAYER) + PACMAN_HIDDEN_LAYER + (PACMAN_HIDDEN_LAYER * PACMAN_NUM_ACTIONS) + PACMAN_NUM_ACTIONS;
     //PACMAN PARAMETERES
-    public static final double MUTATION_CHANCE_PACMAN = 0.20733758777463301;
-    public static final double MUTATION_PERCENTAGE_PACMAN = 0.4944831677092099;
-    public static final double CUTOFF_PACMAN = 0.613588965089243;
+    public static final double MUTATION_CHANCE_PACMAN = 0.1;
+    public static final double MUTATION_PERCENTAGE_PACMAN = 0.05;
+    public static final double CUTOFF_PACMAN = 0.3;
     public static final double SELECTION_PARENTS_PERCENTAGE_PACMAN = 0.2;
     public static final int k_tournament_PACMAN = 5;
     public static final int k_point_PACMAN = 3;

@@ -1,6 +1,4 @@
-BREAKOUT:
-
-    Ideia Adicional:
+Ideia Adicional:
 
         !!ATENÇãO, ESTA PARTE ABAIXO FOI REALIZADA COM INTUITO DE CONSEGUIR UMA GA QUE FOSSE BOA PARA VÁRIAS SEEDS.!!
 
@@ -45,6 +43,12 @@ BREAKOUT:
         Essas classes, em conjunto, facilitam um processo iterativo e automatizado de teste e melhoria de algoritmos genéticos,
         tornando possível ajustar e refinar as estratégias de IA para desempenho ótimo.
 
+
+
+
+
+BREAKOUT:
+
     Rede Neuronal:
 
         Estrutura da Rede:
@@ -64,7 +68,7 @@ BREAKOUT:
 
         Parâmetros Genéticos:
 
-            Inclui parâmetros como a chance de mutação, a porcentagem de mutação, o corte (cutoff) para seleção e a porcentagem de seleção dos pais.
+            Inclui parâmetros como a chance de mutação, a percentagem de mutação, o corte (cutoff) para seleção e a percentagem de seleção dos pais.
             Esses parâmetros determinam como as redes neurais são selecionadas, cruzadas e mutadas ao longo das gerações.
 
         Cruzamento (Crossover):
@@ -97,6 +101,55 @@ BREAKOUT:
 
 PACMAN:
 
+Rede Neuronal:
+
+        Estrutura da Rede:
+
+            Composta por uma camada de entrada, duas camada oculta e uma camada de output,
+            utilizando a inicialização de He e função de ativação sigmoid para as camadas ocultas e a softmax para a camada de saída.
+
+        Normalização e Movimento:
+
+            Normaliza os dados de entrada para melhorar a eficiência do treinamento e define ações de jogo com base nas saídas da rede.
+
+        Manuseio de Pesos:
+
+            Permite armazenar e recuperar pesos e vieses, facilitando as operações de mutação e cruzamento no contexto genético.
+
+    Algoritmo Genético:
+
+        Parâmetros Genéticos:
+
+            Inclui parâmetros como a chance de mutação, a percentagem de mutação, o corte (cutoff) para seleção e a percentagem de seleção dos pais.
+            Esses parâmetros determinam como as redes neurais são selecionadas, cruzadas e mutadas ao longo das gerações.
+
+        Cruzamento (Crossover):
+
+            Utiliza uma técnica de crossover de one-point para misturar os genes de dois pais selecionados, gerando novos indivíduos.
+
+        Mutação:
+
+            Modifica aleatoriamente uma percentagem dos genes de um indivíduo de acordo,
+            trocando as posições selecionadas por novos falores random.
+
+        Seleção:
+
+            Implementa um método de seleção por torneio para escolher pais para o cruzamento,
+            onde um subconjunto de indivíduos é escolhido aleatoriamente e o melhor é selecionado com base no fitness.
+
+        Gestão do Fitness:
+
+            Antes de cada geração, o fitness de cada rede neural é calculado para avaliar seu desempenho.
+            Isso é essencial para a seleção e reprodução.
+
+        Renovação da População:
+
+            Após cada geração, uma nova população é formada pela substituição de uma fração da população anterior pelos melhores indivíduos da nova geração,
+            conforme definido pelo parâmetro de cutoff.
+
+        Resultados de Desempenho:
+
+            A classe fornece mecanismos para monitorar o desempenho ao longo das gerações, destacando o fitness do melhor indivíduo em cada geração e fornecendo um resumo do fitness dos cinco melhores indivíduos no final.
 
 
 
