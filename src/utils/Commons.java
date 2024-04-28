@@ -75,12 +75,6 @@ public interface Commons {
     public static final int k_tournament_PACMAN = 8;
     public static final int seed_PACMAN = 2 ;
 
-
-    // FILEMANAGER AND TESTER
-    public static final int BREAKOUT = 1;
-    public static final int PACMAN = 2;
-
-
     public static int POPULATION_SIZE = 100 ;
     public static int NUM_GENERATIONS = 100 ;
 }
