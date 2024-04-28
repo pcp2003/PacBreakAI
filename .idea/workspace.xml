@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0538a2fe-7d0e-4bd3-ad70-89f63d42c2f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pacman/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pacman/PacmanGeneticAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pacman/PacmanNeuralNetwork.java" afterDir="false" />
+    <list default="true" id="01b28419-c47b-4835-b786-26f419a49f75" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bestParameters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bestParameters.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/randomValues.txt" beforeDir="false" afterPath="$PROJECT_DIR$/randomValues.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pacman/Pacman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/Pacman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pacman/PacmanBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/PacmanBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pacman/RandomController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI_V6/utils/Commons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI_V6/utils/Commons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pacman/PacmanNeuralNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/PacmanNeuralNetwork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/Commons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Commons.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,13 +18,6 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="CLEAR_OUTPUT_DIRECTORY" value="false" />
-  </component>
-  <component name="FindBugs-IDEA-Workspace">
-    <analyzeAfterCompile>true</analyzeAfterCompile>
-    <toolWindowToFront>false</toolWindowToFront>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -40,9 +25,10 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="2f5N5HWNLsWnkyOCxVLaMg4aXDS" />
+  <component name="ProjectId" id="2fbz7ZeJx0vDv5WE2is5P97BREt" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="autoscrollFromSource" value="true" />
@@ -51,74 +37,41 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showModules" value="false" />
     <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Pacman&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/joaos/Documents/GitHub/AI_Project_/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.TesterGAs.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Pacman__pedro",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\joaos\Documents\GitHub\AI_Project_\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pedro\Documents\GitHub\AI_Project_" />
-      <recent name="C:\Users\joaos\Documents\GitHub\AI_Project_" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pacman" />
-    </key>
-  </component>
+}]]></component>
   <component name="RunManager" selected="Application.Main">
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="breakout.Main" />
+      <option name="MAIN_CLASS_NAME" value="pacman.Main" />
       <module name="AI_V6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="TesterGAs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="breakout.TesterGAs" />
+      <option name="MAIN_CLASS_NAME" value="utils.TesterGAs" />
       <module name="AI_V6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    <configuration name="breakout.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="breakout.Main" />
+      <module name="AI_V6" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,6 +80,7 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TesterGAs" />
+        <item itemvalue="Application.breakout.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -141,12 +95,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0538a2fe-7d0e-4bd3-ad70-89f63d42c2f6" name="Changes" comment="" />
-      <created>1713260092331</created>
+      <changelist id="01b28419-c47b-4835-b786-26f419a49f75" name="Changes" comment="" />
+      <created>1714253497914</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1713260092331</updated>
-      <workItem from="1713260093420" duration="6998000" />
+      <updated>1714253497914</updated>
+      <workItem from="1714253499126" duration="104000" />
     </task>
     <servers />
   </component>
