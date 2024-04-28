@@ -11,7 +11,7 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
 
     public PacmanGeneticAlgorithm() {
 
-        super(Commons.MUTATION_CHANCE_PACMAN, Commons.MUTATION_PERCENTAGE_PACMAN, Commons.CUTOFF_PACMAN, Commons.SELECTION_PARENTS_PERCENTAGE_PACMAN, Commons.k_tournament_PACMAN, Commons.k_point_PACMAN, Commons.seed_PACMAN);
+        super(Commons.MUTATION_CHANCE_PACMAN, Commons.MUTATION_PERCENTAGE_PACMAN, Commons.CUTOFF_PACMAN, 0, Commons.k_tournament_PACMAN, 0, Commons.seed_PACMAN);
 
         generatePopulation();
 
@@ -43,14 +43,19 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
     }
 
     public NeuronalNetwork search() {
-
+        Double best = 0.0;
         for (int i = 0; i < NUM_GENERATIONS; i++) {
 
             generatePopulationFitness(population);
 
             Arrays.sort(population);
 
-            System.out.println("Generation " + i + " Best Fitness " + population[POPULATION_SIZE - 1].getFitness());
+            if(population[POPULATION_SIZE-1].getFitness() > best)  {
+                best = population[POPULATION_SIZE - 1].getFitness();
+                System.out.println(population[POPULATION_SIZE - 1].getFitness());
+            }
+
+            if(i%10 == 0) System.out.println("Gen: " + i);
 
             NeuronalNetwork[] newGeneration = new PacmanNeuralNetwork[POPULATION_SIZE];
 
@@ -97,6 +102,7 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
             for (int i = 0; i < MUTATION_PERCENTAGE * Commons.PACMAN_NETWORK_SIZE; i++) {
                 int index = (int) (random.nextDouble() * Commons.PACMAN_NETWORK_SIZE);
                 genes[index] = (random.nextDouble() * 2 - 1);
+                //genes[index] = 1 - genes[index];
             }
         }
         individual.fillParametersWithValues(genes);
@@ -111,11 +117,18 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
         double[] child1 = new double[genes1.length];
         double[] child2 = new double[genes2.length];
 
-        int crossoverPoint = (int) (Math.random() * genes1.length);
+        //int crossoverPoint = (int) (random.nextDouble() * (genes1.length/2));
+        int crossoverPoint = (int) (random.nextDouble() * genes1.length);
+
 
         for (int i = 0; i < genes1.length; i++) {
-            child1[i] = (i < crossoverPoint) ? genes1[i] : genes2[i];
-            child2[i] = (i < crossoverPoint) ? genes2[i] : genes1[i];
+            if ( i < crossoverPoint) {
+                child1[i] = genes2[i];
+                child2[i] = genes1[i];
+            } else {
+                child1[i] = genes1[i];
+                child2[i] = genes2[i];
+            }
         }
 
         NeuronalNetwork offspring1 = new PacmanNeuralNetwork(child1);

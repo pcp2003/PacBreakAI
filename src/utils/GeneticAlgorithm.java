@@ -6,8 +6,8 @@ public abstract class GeneticAlgorithm {
 
     public static Random random = new Random();
 
-    public int POPULATION_SIZE = 100;
-    public int NUM_GENERATIONS = 50;
+    public int POPULATION_SIZE = Commons.POPULATION_SIZE;
+    public int NUM_GENERATIONS = Commons.NUM_GENERATIONS;
     public double MUTATION_CHANCE;
     public double MUTATION_PERCENTAGE;
     public double CUTOFF;
