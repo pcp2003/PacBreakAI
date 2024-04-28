@@ -52,11 +52,11 @@ public class PacmanNeuralNetwork extends NeuronalNetwork {
         double[] output = forward(currentState);
         for(int i = 0; i  < output.length; i++) {
             if( output[i] > maxValue) {
-                max = i+1;
+                max = i;
                 maxValue = output[i];
             };
         }
-        return maxValue == 0.25 ? 0 : max;
+        return max;
     }
 
     public double[] forward(double[] currentState) {
@@ -67,7 +67,7 @@ public class PacmanNeuralNetwork extends NeuronalNetwork {
             for (int j = 0; j < inputDim; j++) {
                 hiddenLayer[i] += hiddenWeights[j][i] * currentState[j];
             }
-            hiddenLayer[i] = sigmoid(hiddenLayer[i] + hiddenBiases[i]);
+            hiddenLayer[i] = (hiddenLayer[i] + hiddenBiases[i]);
         }
 
         // Output layer (now directly follows the first hidden layer)
@@ -78,7 +78,6 @@ public class PacmanNeuralNetwork extends NeuronalNetwork {
             }
             output[i] = sigmoid(output[i] + outputBiases[i]);
         }
-        output = softmax(output);
         return output;
     }
 

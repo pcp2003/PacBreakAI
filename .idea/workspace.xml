@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01b28419-c47b-4835-b786-26f419a49f75" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bestParametersPacman.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bestParametersPacman.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AI_V6/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI_V6/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AI_V6/breakout/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI_V6/breakout/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AI_V6/utils/Commons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI_V6/utils/Commons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pacman/PacmanNeuralNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pacman/PacmanNeuralNetwork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/Commons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Commons.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +24,10 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2fbz7ZeJx0vDv5WE2is5P97BREt" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
@@ -44,17 +41,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "Application.TesterGAs.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Pacman__pedro",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TesterGAs">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pacman.Main" />
       <module name="AI_V6" />
@@ -78,9 +78,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TesterGAs" />
         <item itemvalue="Application.breakout.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
