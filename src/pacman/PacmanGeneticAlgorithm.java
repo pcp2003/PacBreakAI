@@ -50,13 +50,8 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
 
             Arrays.sort(population);
 
-            if(population[POPULATION_SIZE-1].getFitness() > best)  {
-                best = population[POPULATION_SIZE - 1].getFitness();
-                System.out.println(population[POPULATION_SIZE - 1].getFitness());
-            }
-
-            if(i%10 == 0) System.out.println("Gen: " + i);
-
+            System.out.println("Generation " + i + " Best Fitness " + population[POPULATION_SIZE - 1].getFitness());
+            
             NeuronalNetwork[] newGeneration = new PacmanNeuralNetwork[POPULATION_SIZE];
 
             for (int j = 0; j < POPULATION_SIZE; j += 2) {
