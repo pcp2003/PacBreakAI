@@ -67,7 +67,9 @@ public class TesterGAs {
 
     // Considerando um GA = X com pontuação(X) = 10, testBestParameters verifica a consistencia da pontuação(X) em NrOfTimesTested tentativas para a MESMA seed que pontuou 10.
 
-    public static int[] testBestParameters(int NrOfTimesTested, String game) {
+    // Se specificSeed == true, então utiliza a seed definida em COMMONS, caso contrário, utiliza a seed que melhor pontuou no ficheiro randomValues.
+
+    public static int[] testBestParameters(int NrOfTimesTested, String game, boolean specificSeed) {
 
         String randomValuesPath;
         String bestParametersPath;
@@ -112,6 +114,10 @@ public class TesterGAs {
 
                     int seed = (int) bestParametersArray[j][6];
 
+                    if (specificSeed)
+                        seed = Commons.seed_BREAKOUT;
+
+
                     ga = new BreakoutGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed);
 
                     BreakoutBoard b = new BreakoutBoard(ga.search(), false, seed);
@@ -120,6 +126,9 @@ public class TesterGAs {
                 } else {
 
                     int seed = (int) bestParametersArray[j][6];
+
+                    if (specificSeed)
+                        seed = Commons.seed_PACMAN;
 
                     ga = new PacmanGeneticAlgorithm(bestParametersArray[j][0], bestParametersArray[j][1], bestParametersArray[j][2], bestParametersArray[j][3], bestParametersArray[j][4], bestParametersArray[j][5], seed);
 
@@ -159,7 +168,7 @@ public class TesterGAs {
 
         int[] result;
 
-        result = testBestParameters(1, "pacman");
+        result = testBestParameters(10, "breakout", true);
 
         for (int i = 0; i != result.length; i++) {
             System.out.print(result[i]);

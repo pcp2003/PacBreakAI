@@ -40,9 +40,9 @@ Ideias Adicionais:
                         Gera e testa várias instâncias de GeneticAlgorithm com parâmetros aleatórios para diferentes seeds e registra os resultados no arquivo do jogo respectivo.
                         Este método é usado para explorar diferentes configurações de algoritmo genético de forma aleatória.
 
-                Método estático testBestParameters(int NrOfSeedsTested):
+                public static int[] testBestParameters(int NrOfTimesTested, String game, boolean specificSeed):
 
-                        Avalia a consistência dos parâmetros previamente identificados como bem-sucedidos (armazenados pelo FileManager) na seed que melhor pontuou.
+                        Avalia a consistência dos parâmetros previamente identificados como bem-sucedidos (armazenados pelo FileManager) na seed que melhor pontuou ou numa seed específica.
                         Os parâmetros são retestados, e seus desempenhos são avaliados para verificar se continuam sendo eficazes em novos testes.
                         Os resultados desses testes são acumulados, permitindo uma comparação quantitativa.
 
