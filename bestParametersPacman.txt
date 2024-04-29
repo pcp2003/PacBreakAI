@@ -1,332 +1,432 @@
 
-Mutation chance : 0.2263540575551128
-Mutation Percentage : 0.1029761172164834
-Cutoff : 0.2802919789701388
-Selection Parents Percentage : 0.2881334545148301
-K_Tournament : 2
-K_Point : 1
-Seed : 545
- Avarage Fitness = 47001.0
+Mutation chance : 0.030776731580427312
+Mutation Percentage : 0.22154041122149287
+Cutoff : 0.24243814409520587
+Selection Parents Percentage : 0.7486432320433529
+K_Tournament : 4
+K_Point : 3
+Seed : 505
+ Avarage Fitness = 35002.0
 
-Mutation chance : 0.3228085440890356
-Mutation Percentage : 0.08068820803254605
-Cutoff : 0.9074105375530896
-Selection Parents Percentage : 0.7289044729358986
-K_Tournament : 2
-K_Point : 2
-Seed : 875
- Avarage Fitness = 55000.0
-
-Mutation chance : 0.442143420698337
-Mutation Percentage : 0.19217757269462793
-Cutoff : 0.3210763999726639
-Selection Parents Percentage : 0.9338253926589305
-K_Tournament : 3
-K_Point : 4
-Seed : 723
- Avarage Fitness = 47001.0
-
-Mutation chance : 0.2396806701706674
-Mutation Percentage : 0.10519279252273271
-Cutoff : 0.47514333552471955
-Selection Parents Percentage : 0.5854613615371644
+Mutation chance : 0.3535002172737822
+Mutation Percentage : 0.44106688330847527
+Cutoff : 0.1882167132006643
+Selection Parents Percentage : 0.6202026427372999
 K_Tournament : 5
-K_Point : 1
-Seed : 26
+K_Point : 4
+Seed : 208
+ Avarage Fitness = 45001.0
+
+Mutation chance : 0.10781463019105973
+Mutation Percentage : 0.22885170191326626
+Cutoff : 0.49935865861518847
+Selection Parents Percentage : 0.1345537287802383
+K_Tournament : 2
+K_Point : 4
+Seed : 209
+ Avarage Fitness = 46001.0
+
+Mutation chance : 0.38264932802259455
+Mutation Percentage : 0.12375688582788145
+Cutoff : 0.7554585707293775
+Selection Parents Percentage : 0.965880321065896
+K_Tournament : 3
+K_Point : 5
+Seed : 226
+ Avarage Fitness = 59001.0
+
+Mutation chance : 0.39737242196875167
+Mutation Percentage : 0.13352219706783602
+Cutoff : 0.13348663727281737
+Selection Parents Percentage : 0.34782723759936207
+K_Tournament : 6
+K_Point : 5
+Seed : 719
  Avarage Fitness = 51001.0
 
-Mutation chance : 0.5068831539316258
-Mutation Percentage : 0.08282927700505642
-Cutoff : 0.32507810169798296
-Selection Parents Percentage : 0.9271570947376033
-K_Tournament : 2
-K_Point : 5
-Seed : 586
- Avarage Fitness = 45201.0
-
-Mutation chance : 0.33473316629152644
-Mutation Percentage : 0.25618357526676405
-Cutoff : 0.7606068048286238
-Selection Parents Percentage : 0.806135001357195
+Mutation chance : 0.030776731580427312
+Mutation Percentage : 0.22154041122149287
+Cutoff : 0.24243814409520587
+Selection Parents Percentage : 0.7486432320433529
 K_Tournament : 4
-K_Point : 1
-Seed : 572
- Avarage Fitness = 36002.0
+K_Point : 3
+Seed : 505
+ Avarage Fitness = 36003.0
 
-Mutation chance : 0.4428545092241398
-Mutation Percentage : 0.2364107378214706
-Cutoff : 0.635731572528568
-Selection Parents Percentage : 0.9029648620700496
+Mutation chance : 0.21086158944936234
+Mutation Percentage : 0.4454334529021601
+Cutoff : 0.13722524462644428
+Selection Parents Percentage : 0.8006007502485561
+K_Tournament : 6
+K_Point : 2
+Seed : 289
+ Avarage Fitness = 45001.0
+
+Mutation chance : 0.23680289066248045
+Mutation Percentage : 0.49021166564198054
+Cutoff : 0.3740141315904364
+Selection Parents Percentage : 0.1154059523352056
+K_Tournament : 2
+K_Point : 1
+Seed : 359
+ Avarage Fitness = 45202.6
+
+Mutation chance : 0.27935190309801855
+Mutation Percentage : 0.22392291562700273
+Cutoff : 0.988926202554469
+Selection Parents Percentage : 0.6330187534321082
+K_Tournament : 2
+K_Point : 2
+Seed : 131
+ Avarage Fitness = 46200.4
+
+Mutation chance : 0.5089479240464209
+Mutation Percentage : 0.4147097117244648
+Cutoff : 0.7020051470061389
+Selection Parents Percentage : 0.1836949903284288
+K_Tournament : 3
+K_Point : 4
+Seed : 118
+ Avarage Fitness = 46401.2
+
+Mutation chance : 0.2702703211550817
+Mutation Percentage : 0.018707018526695977
+Cutoff : 0.382467453972133
+Selection Parents Percentage : 0.9802652475055174
 K_Tournament : 4
 K_Point : 4
-Seed : 598
- Avarage Fitness = 43000.8
+Seed : 54
+ Avarage Fitness = 59001.0
 
-Mutation chance : 0.21151907975199108
-Mutation Percentage : 0.4321549190409812
-Cutoff : 0.10000365791466277
-Selection Parents Percentage : 0.6158541271895198
-K_Tournament : 6
-K_Point : 5
-Seed : 420
- Avarage Fitness = 34001.0
-
-Mutation chance : 0.3715709448710962
-Mutation Percentage : 0.09415686273754668
-Cutoff : 0.39540191136753244
-Selection Parents Percentage : 0.1280744305811652
-K_Tournament : 6
-K_Point : 5
-Seed : 227
- Avarage Fitness = 46003.0
-
-Mutation chance : 0.22037324408273928
-Mutation Percentage : 0.1904241214040538
-Cutoff : 0.9275563308402215
-Selection Parents Percentage : 0.8258613385167738
+Mutation chance : 0.48582260010475287
+Mutation Percentage : 0.06281116773463345
+Cutoff : 0.9388740591811042
+Selection Parents Percentage : 0.32563737659499686
 K_Tournament : 5
 K_Point : 2
-Seed : 430
- Avarage Fitness = 49002.0
+Seed : 386
+ Avarage Fitness = 51202.4
 
-Mutation chance : 0.14152734567411723
-Mutation Percentage : 0.28182860570302826
-Cutoff : 0.5750421719107007
-Selection Parents Percentage : 0.8619571932088002
-K_Tournament : 5
-K_Point : 4
+Mutation chance : 0.40802714660283357
+Mutation Percentage : 0.10520868696321982
+Cutoff : 0.16041773102962625
+Selection Parents Percentage : 0.7262532089967431
+K_Tournament : 6
+K_Point : 5
 Seed : 365
- Avarage Fitness = 44005.0
+ Avarage Fitness = 53002.0
 
-Mutation chance : 0.19005006659108437
-Mutation Percentage : 0.21475339897412532
-Cutoff : 0.6371249282377012
-Selection Parents Percentage : 0.9965074721719837
-K_Tournament : 5
-K_Point : 5
-Seed : 923
- Avarage Fitness = 55001.0
-
-Mutation chance : 0.40821400472661107
-Mutation Percentage : 0.15871774993695403
-Cutoff : 0.589928690312385
-Selection Parents Percentage : 0.23772551759629723
+Mutation chance : 0.3535002172737822
+Mutation Percentage : 0.44106688330847527
+Cutoff : 0.1882167132006643
+Selection Parents Percentage : 0.6202026427372999
 K_Tournament : 5
 K_Point : 4
-Seed : 433
- Avarage Fitness = 57001.0
+Seed : 208
+ Avarage Fitness = 51002.0
 
-Mutation chance : 0.48494622599362736
-Mutation Percentage : 0.17137931197060158
-Cutoff : 0.29571708408926034
-Selection Parents Percentage : 0.9723624286702938
-K_Tournament : 6
+Mutation chance : 0.1787727919895848
+Mutation Percentage : 0.08508399763156364
+Cutoff : 0.46435748815528854
+Selection Parents Percentage : 0.6885544468697519
+K_Tournament : 2
 K_Point : 3
-Seed : 698
- Avarage Fitness = 49602.0
+Seed : 372
+ Avarage Fitness = 51801.4
 
-Mutation chance : 0.36455416598257573
-Mutation Percentage : 0.38831879485164866
-Cutoff : 0.1377765171671334
-Selection Parents Percentage : 0.5140622210346867
-K_Tournament : 5
-K_Point : 3
-Seed : 140
- Avarage Fitness = 66002.0
-
-Mutation chance : 0.5033451475981899
-Mutation Percentage : 0.1106047677761897
-Cutoff : 0.372300371624706
-Selection Parents Percentage : 0.7526637389339482
-K_Tournament : 5
-K_Point : 5
-Seed : 936
- Avarage Fitness = 49000.0
-
-Mutation chance : 0.36241523829026867
-Mutation Percentage : 0.2623708976726213
-Cutoff : 0.4617055081695285
-Selection Parents Percentage : 0.6879253999784842
-K_Tournament : 2
-K_Point : 1
-Seed : 207
- Avarage Fitness = 66004.0
-
-Mutation chance : 0.3329633631375505
-Mutation Percentage : 0.05470293939886161
-Cutoff : 0.42000653571956614
-Selection Parents Percentage : 0.5618584907946362
-K_Tournament : 5
-K_Point : 1
-Seed : 274
- Avarage Fitness = 65001.0
-
-Mutation chance : 0.2263540575551128
-Mutation Percentage : 0.1029761172164834
-Cutoff : 0.2802919789701388
-Selection Parents Percentage : 0.2881334545148301
-K_Tournament : 2
-K_Point : 1
-Seed : 545
-
-Mutation chance : 0.2263540575551128
-Mutation Percentage : 0.1029761172164834
-Cutoff : 0.2802919789701388
-Selection Parents Percentage : 0.2881334545148301
-K_Tournament : 2
-K_Point : 1
-Seed : 3113
- Avarage Fitness = 53002.4
-
-Mutation chance : 0.3228085440890356
-Mutation Percentage : 0.08068820803254605
-Cutoff : 0.9074105375530896
-Selection Parents Percentage : 0.7289044729358986
-K_Tournament : 2
-K_Point : 2
-Seed : 3113
- Avarage Fitness = 65003.0
-
-Mutation chance : 0.442143420698337
-Mutation Percentage : 0.19217757269462793
-Cutoff : 0.3210763999726639
-Selection Parents Percentage : 0.9338253926589305
+Mutation chance : 0.40787481757395905
+Mutation Percentage : 0.4111259327256216
+Cutoff : 0.10987468115126274
+Selection Parents Percentage : 0.7520624869513503
 K_Tournament : 3
-K_Point : 4
-Seed : 3113
- Avarage Fitness = 52001.0
-
-Mutation chance : 0.2396806701706674
-Mutation Percentage : 0.10519279252273271
-Cutoff : 0.47514333552471955
-Selection Parents Percentage : 0.5854613615371644
-K_Tournament : 5
-K_Point : 1
-Seed : 3113
- Avarage Fitness = 80003.0
-
-Mutation chance : 0.5068831539316258
-Mutation Percentage : 0.08282927700505642
-Cutoff : 0.32507810169798296
-Selection Parents Percentage : 0.9271570947376033
-K_Tournament : 2
-K_Point : 5
-Seed : 3113
- Avarage Fitness = 64002.0
-
-Mutation chance : 0.33473316629152644
-Mutation Percentage : 0.25618357526676405
-Cutoff : 0.7606068048286238
-Selection Parents Percentage : 0.806135001357195
-K_Tournament : 4
-K_Point : 1
-Seed : 3113
- Avarage Fitness = 50001.0
-
-Mutation chance : 0.4428545092241398
-Mutation Percentage : 0.2364107378214706
-Cutoff : 0.635731572528568
-Selection Parents Percentage : 0.9029648620700496
-K_Tournament : 4
-K_Point : 4
-Seed : 3113
- Avarage Fitness = 69002.0
-
-Mutation chance : 0.21151907975199108
-Mutation Percentage : 0.4321549190409812
-Cutoff : 0.10000365791466277
-Selection Parents Percentage : 0.6158541271895198
-K_Tournament : 6
-K_Point : 5
-Seed : 3113
- Avarage Fitness = 51001.0
-
-Mutation chance : 0.3715709448710962
-Mutation Percentage : 0.09415686273754668
-Cutoff : 0.39540191136753244
-Selection Parents Percentage : 0.1280744305811652
-K_Tournament : 6
-K_Point : 5
-Seed : 3113
- Avarage Fitness = 62004.0
-
-Mutation chance : 0.22037324408273928
-Mutation Percentage : 0.1904241214040538
-Cutoff : 0.9275563308402215
-Selection Parents Percentage : 0.8258613385167738
-K_Tournament : 5
 K_Point : 2
-Seed : 3113
- Avarage Fitness = 52001.0
+Seed : 912
+ Avarage Fitness = 62802.6
 
-Mutation chance : 0.14152734567411723
-Mutation Percentage : 0.28182860570302826
-Cutoff : 0.5750421719107007
-Selection Parents Percentage : 0.8619571932088002
+Mutation chance : 0.3887532832717054
+Mutation Percentage : 0.3805953329477478
+Cutoff : 0.9058061441804154
+Selection Parents Percentage : 0.843242763687951
+K_Tournament : 2
+K_Point : 2
+Seed : 969
+ Avarage Fitness = 50801.4
+
+Mutation chance : 0.2928666006579901
+Mutation Percentage : 0.1793728682745256
+Cutoff : 0.6059503447835932
+Selection Parents Percentage : 0.7634365668261258
+K_Tournament : 4
+K_Point : 3
+Seed : 323
+ Avarage Fitness = 45002.0
+
+Mutation chance : 0.4922207806089481
+Mutation Percentage : 0.0797125864419889
+Cutoff : 0.7093134176120286
+Selection Parents Percentage : 0.19394676781300013
+K_Tournament : 6
+K_Point : 2
+Seed : 253
+ Avarage Fitness = 56001.0
+
+Mutation chance : 0.3391051248916199
+Mutation Percentage : 0.26656441850289747
+Cutoff : 0.14315784963311654
+Selection Parents Percentage : 0.7901817119909462
+K_Tournament : 4
+K_Point : 5
+Seed : 28
+ Avarage Fitness = 59002.0
+
+Mutation chance : 0.4145506025100695
+Mutation Percentage : 0.2235328593610726
+Cutoff : 0.8400314209162205
+Selection Parents Percentage : 0.45877613954768537
 K_Tournament : 5
-K_Point : 4
-Seed : 3113
+K_Point : 1
+Seed : 138
  Avarage Fitness = 50002.0
 
-Mutation chance : 0.19005006659108437
-Mutation Percentage : 0.21475339897412532
-Cutoff : 0.6371249282377012
-Selection Parents Percentage : 0.9965074721719837
-K_Tournament : 5
-K_Point : 5
-Seed : 3113
- Avarage Fitness = 49002.0
-
-Mutation chance : 0.40821400472661107
-Mutation Percentage : 0.15871774993695403
-Cutoff : 0.589928690312385
-Selection Parents Percentage : 0.23772551759629723
-K_Tournament : 5
+Mutation chance : 0.08229768065303465
+Mutation Percentage : 0.3517276726919073
+Cutoff : 0.42662188721958283
+Selection Parents Percentage : 0.1517942691729802
+K_Tournament : 2
 K_Point : 4
-Seed : 3113
- Avarage Fitness = 63001.0
+Seed : 132
+ Avarage Fitness = 55004.0
 
-Mutation chance : 0.48494622599362736
-Mutation Percentage : 0.17137931197060158
-Cutoff : 0.29571708408926034
-Selection Parents Percentage : 0.9723624286702938
+Mutation chance : 0.3006275072364731
+Mutation Percentage : 0.07066183182176582
+Cutoff : 0.6263290214903088
+Selection Parents Percentage : 0.4525298498946019
+K_Tournament : 4
+K_Point : 4
+Seed : 854
+ Avarage Fitness = 44002.0
+
+Mutation chance : 0.36495395371702644
+Mutation Percentage : 0.2882846857550133
+Cutoff : 0.44204689715329426
+Selection Parents Percentage : 0.6886393358714245
 K_Tournament : 6
-K_Point : 3
-Seed : 3113
- Avarage Fitness = 64602.0
+K_Point : 2
+Seed : 255
+ Avarage Fitness = 43001.0
 
-Mutation chance : 0.36455416598257573
-Mutation Percentage : 0.38831879485164866
-Cutoff : 0.1377765171671334
-Selection Parents Percentage : 0.5140622210346867
-K_Tournament : 5
-K_Point : 3
-Seed : 3113
- Avarage Fitness = 69004.0
-
-Mutation chance : 0.5033451475981899
-Mutation Percentage : 0.1106047677761897
-Cutoff : 0.372300371624706
-Selection Parents Percentage : 0.7526637389339482
-K_Tournament : 5
-K_Point : 5
-Seed : 3113
- Avarage Fitness = 59402.4
-
-Mutation chance : 0.36241523829026867
-Mutation Percentage : 0.2623708976726213
-Cutoff : 0.4617055081695285
-Selection Parents Percentage : 0.6879253999784842
+Mutation chance : 0.4473548184906295
+Mutation Percentage : 0.5029325987872038
+Cutoff : 0.8257532527589876
+Selection Parents Percentage : 0.574121406933174
 K_Tournament : 2
 K_Point : 1
-Seed : 3113
- Avarage Fitness = 58402.6
+Seed : 880
+ Avarage Fitness = 65001.0
 
-Mutation chance : 0.3329633631375505
-Mutation Percentage : 0.05470293939886161
-Cutoff : 0.42000653571956614
-Selection Parents Percentage : 0.5618584907946362
+Mutation chance : 0.3414525292166164
+Mutation Percentage : 0.3945060564309324
+Cutoff : 0.3265256725816781
+Selection Parents Percentage : 0.308535549581778
 K_Tournament : 5
+K_Point : 4
+Seed : 823
+ Avarage Fitness = 49001.0
+
+Mutation chance : 0.10781463019105973
+Mutation Percentage : 0.22885170191326626
+Cutoff : 0.49935865861518847
+Selection Parents Percentage : 0.1345537287802383
+K_Tournament : 2
+K_Point : 4
+Seed : 209
+ Avarage Fitness = 50001.0
+
+Mutation chance : 0.3556033229207533
+Mutation Percentage : 0.20212929842358124
+Cutoff : 0.9404932722122533
+Selection Parents Percentage : 0.1743546101548128
+K_Tournament : 5
+K_Point : 4
+Seed : 169
+ Avarage Fitness = 46001.0
+
+Mutation chance : 0.4179812350765363
+Mutation Percentage : 0.4524791392097557
+Cutoff : 0.6540166018947294
+Selection Parents Percentage : 0.15357422313559738
+K_Tournament : 4
+K_Point : 2
+Seed : 235
+ Avarage Fitness = 55002.0
+
+Mutation chance : 0.22322009725048914
+Mutation Percentage : 0.3761891633243252
+Cutoff : 0.8072477369156467
+Selection Parents Percentage : 0.6072746505154263
+K_Tournament : 3
+K_Point : 2
+Seed : 17
+ Avarage Fitness = 48402.0
+
+Mutation chance : 0.3910988967413098
+Mutation Percentage : 0.03433024644607651
+Cutoff : 0.28083108602930307
+Selection Parents Percentage : 0.8691060599107486
+K_Tournament : 6
 K_Point : 1
-Seed : 3113
+Seed : 472
+ Avarage Fitness = 72002.0
+
+Mutation chance : 0.41413588904027293
+Mutation Percentage : 0.13438005898137806
+Cutoff : 0.8516386931049484
+Selection Parents Percentage : 0.20251619187587305
+K_Tournament : 2
+K_Point : 2
+Seed : 365
  Avarage Fitness = 63001.0
+
+Mutation chance : 0.3602437371510082
+Mutation Percentage : 0.04817406822420816
+Cutoff : 0.4734425200559492
+Selection Parents Percentage : 0.6691821184265289
+K_Tournament : 4
+K_Point : 2
+Seed : 915
+ Avarage Fitness = 54001.0
+
+Mutation chance : 0.33686027597885054
+Mutation Percentage : 0.19188704954091979
+Cutoff : 0.5859857692866031
+Selection Parents Percentage : 0.7797141867169353
+K_Tournament : 5
+K_Point : 3
+Seed : 35
+ Avarage Fitness = 49002.0
+
+Mutation chance : 0.3552731334995557
+Mutation Percentage : 0.10036581938853349
+Cutoff : 0.6956000771509764
+Selection Parents Percentage : 0.6864309766991387
+K_Tournament : 5
+K_Point : 3
+Seed : 591
+ Avarage Fitness = 76004.0
+
+Mutation chance : 0.4545611413993584
+Mutation Percentage : 0.22036050445209004
+Cutoff : 0.765348150463386
+Selection Parents Percentage : 0.7369557707365832
+K_Tournament : 3
+K_Point : 1
+Seed : 75
+ Avarage Fitness = 55001.0
+
+Mutation chance : 0.28777406885158835
+Mutation Percentage : 0.0843521454323342
+Cutoff : 0.4284972069532281
+Selection Parents Percentage : 0.31038410687710755
+K_Tournament : 5
+K_Point : 5
+Seed : 968
+ Avarage Fitness = 48002.0
+
+Mutation chance : 0.4896834304263977
+Mutation Percentage : 0.31366529712405317
+Cutoff : 0.5214709024982461
+Selection Parents Percentage : 0.9373285800674611
+K_Tournament : 3
+K_Point : 5
+Seed : 810
+ Avarage Fitness = 56002.0
+
+Mutation chance : 0.38264932802259455
+Mutation Percentage : 0.12375688582788145
+Cutoff : 0.7554585707293775
+Selection Parents Percentage : 0.965880321065896
+K_Tournament : 3
+K_Point : 5
+Seed : 226
+ Avarage Fitness = 53001.0
+
+Mutation chance : 0.4595828847529473
+Mutation Percentage : 0.035996808283389296
+Cutoff : 0.9461697562747696
+Selection Parents Percentage : 0.4411652908221231
+K_Tournament : 2
+K_Point : 1
+Seed : 604
+ Avarage Fitness = 44002.2
+
+Mutation chance : 0.5068151305691848
+Mutation Percentage : 0.28516239869795224
+Cutoff : 0.6175228879397898
+Selection Parents Percentage : 0.9526010570880529
+K_Tournament : 5
+K_Point : 2
+Seed : 266
+ Avarage Fitness = 45201.2
+
+Mutation chance : 0.27659494905260584
+Mutation Percentage : 0.3022240942306359
+Cutoff : 0.7070280203940303
+Selection Parents Percentage : 0.13827562029260715
+K_Tournament : 4
+K_Point : 2
+Seed : 166
+ Avarage Fitness = 42601.8
+
+Mutation chance : 0.4479737957499186
+Mutation Percentage : 0.16057226150416576
+Cutoff : 0.5457240086555942
+Selection Parents Percentage : 0.19487614843705459
+K_Tournament : 6
+K_Point : 2
+Seed : 742
+ Avarage Fitness = 44002.0
+
+Mutation chance : 0.4980439477477778
+Mutation Percentage : 0.033736591354016014
+Cutoff : 0.48891772769829633
+Selection Parents Percentage : 0.35688106958456245
+K_Tournament : 4
+K_Point : 5
+Seed : 666
+ Avarage Fitness = 58002.0
+
+Mutation chance : 0.33616458141793354
+Mutation Percentage : 0.4912175157086768
+Cutoff : 0.8441459304227659
+Selection Parents Percentage : 0.587236120920234
+K_Tournament : 2
+K_Point : 1
+Seed : 34
+ Avarage Fitness = 66002.0
+
+Mutation chance : 0.487403869127688
+Mutation Percentage : 0.2342224935538213
+Cutoff : 0.8086838251817708
+Selection Parents Percentage : 0.6137121593405201
+K_Tournament : 2
+K_Point : 3
+Seed : 252
+ Avarage Fitness = 50201.8
+
+Mutation chance : 0.2716255926555735
+Mutation Percentage : 0.10227884704344302
+Cutoff : 0.9369845236732143
+Selection Parents Percentage : 0.6857566765786629
+K_Tournament : 4
+K_Point : 5
+Seed : 274
+ Avarage Fitness = 58002.0
+
+Mutation chance : 0.43410951801889597
+Mutation Percentage : 0.10219096930816561
+Cutoff : 0.6071657404505736
+Selection Parents Percentage : 0.17236483368338107
+K_Tournament : 5
+K_Point : 5
+Seed : 926
+ Avarage Fitness = 44001.0

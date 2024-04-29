@@ -163,10 +163,12 @@ public class TesterGAs {
 
     public static void main(String[] args) {
 
-        addRandomGAToFile(10000, 1, "pacman");
+        int[] result;
 
+        result = testBestParameters(1, "pacman", false);
 
-     
-
+        for (int i = 0; i != result.length; i++) {
+            System.out.print(result[i]);
+        }
     }
 }
