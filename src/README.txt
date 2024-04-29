@@ -125,7 +125,7 @@ Rede Neuronal:
 
         Cruzamento (Crossover):
 
-            Utiliza uma técnica de crossover de one-point para misturar os genes de dois pais selecionados, gerando novos indivíduos.
+            Utiliza uma técnica de crossover de random crossover, em que para cada posição da rede gera um número random e, conforme o número que calhe, escolhe de qual pai associa o gene para aquela posição do filho, gerando novos indivíduos.
 
         Mutação:
 
