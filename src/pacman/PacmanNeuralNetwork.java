@@ -21,6 +21,7 @@ public class PacmanNeuralNetwork extends NeuronalNetwork {
     // Método para normalizar os dados de entrada
     public double[] normalizeInput(double[] inputValues) {
 
+        /*
         double[] normalizedValues = new double[inputValues.length];
 
         double media = 0.0;
@@ -34,8 +35,8 @@ public class PacmanNeuralNetwork extends NeuronalNetwork {
         for (int i = 0; i < inputValues.length; i++) {
             normalizedValues[i] = inputValues[i] / media;
         }
-
-        return normalizedValues;
+        */
+        return inputValues;
     }
 
     @Override

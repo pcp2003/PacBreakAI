@@ -66,7 +66,7 @@ BREAKOUT:
 
         Manuseio de Pesos:
 
-            Permite armazenar e recuperar pesos e vieses, facilitando as operações de mutação e cruzamento no contexto genético.
+            Permite armazenar e recuperar pesos e biases, facilitando as operações de mutação e cruzamento no contexto genético.
 
     Algoritmo Genético:
 
@@ -109,12 +109,12 @@ Rede Neuronal:
 
         Estrutura da Rede:
 
-            Composta por uma camada de entrada, duas camada oculta e uma camada de output,
+            Composta por uma camada de entrada, uma camada oculta e uma camada de output,
             utilizando a inicialização de He e função de ativação sigmoid para as camadas ocultas e a softmax para a camada de saída.
 
         Manuseio de Pesos:
 
-            Permite armazenar e recuperar pesos e vieses, facilitando as operações de mutação e cruzamento no contexto genético.
+            Permite armazenar e recuperar pesos e biases, facilitando as operações de mutação e cruzamento no contexto genético.
 
     Algoritmo Genético:
 
@@ -130,7 +130,7 @@ Rede Neuronal:
         Mutação:
 
             Modifica aleatoriamente uma percentagem dos genes de um indivíduo de acordo,
-            trocando as posições selecionadas por novos falores random.
+            trocando as posições selecionadas por novos falores random de 0 a 1.
 
         Seleção:
 

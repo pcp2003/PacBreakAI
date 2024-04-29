@@ -114,8 +114,11 @@ public class PacmanGeneticAlgorithm extends GeneticAlgorithm {
         int crossoverPoint = (int) (Math.random() * genes1.length);
 
         for (int i = 0; i < genes1.length; i++) {
-            child1[i] = (i < crossoverPoint) ? genes1[i] : genes2[i];
-            child2[i] = (i < crossoverPoint) ? genes2[i] : genes1[i];
+            //child1[i] = (i < crossoverPoint) ? genes1[i] : genes2[i];
+            //child2[i] = (i < crossoverPoint) ? genes2[i] : genes1[i];
+            boolean r = (random.nextDouble() < .5);
+            child1[i] = r ? genes1[i] : genes2[i];
+            child2[i] = r ? genes2[i] : genes1[i];
         }
 
         NeuronalNetwork offspring1 = new PacmanNeuralNetwork(child1);
