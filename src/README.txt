@@ -36,6 +36,7 @@ Ideias Adicionais:
             identificando assim os conjuntos de parâmetros mais robustos e eficazes.
 
                Método estático public static void addRandomGAToFile(int NrOfSeedsTested, int NrOfGATestedPerSeed, String game):
+<<<<<<< HEAD
 
                         Gera e testa várias instâncias de GeneticAlgorithm com parâmetros aleatórios para diferentes seeds e registra os resultados no arquivo do jogo respectivo.
                         Este método é usado para explorar diferentes configurações de algoritmo genético de forma aleatória.
@@ -43,6 +44,15 @@ Ideias Adicionais:
                 Método estático testBestParameters(int NrOfSeedsTested):
 
                         Avalia a consistência dos parâmetros previamente identificados como bem-sucedidos (armazenados pelo FileManager) na seed que melhor pontuou.
+=======
+
+                        Gera e testa várias instâncias de GeneticAlgorithm com parâmetros aleatórios para diferentes seeds e registra os resultados no arquivo do jogo respectivo.
+                        Este método é usado para explorar diferentes configurações de algoritmo genético de forma aleatória.
+
+                public static int[] testBestParameters(int NrOfTimesTested, String game, boolean specificSeed):
+
+                        Avalia a consistência dos parâmetros previamente identificados como bem-sucedidos (armazenados pelo FileManager) na seed que melhor pontuou ou numa seed específica.
+>>>>>>> Pacman_pedro
                         Os parâmetros são retestados, e seus desempenhos são avaliados para verificar se continuam sendo eficazes em novos testes.
                         Os resultados desses testes são acumulados, permitindo uma comparação quantitativa.
 
@@ -66,7 +76,7 @@ BREAKOUT:
 
         Manuseio de Pesos:
 
-            Permite armazenar e recuperar pesos e vieses, facilitando as operações de mutação e cruzamento no contexto genético.
+            Permite armazenar e recuperar pesos e biases, facilitando as operações de mutação e cruzamento no contexto genético.
 
     Algoritmo Genético:
 
@@ -109,12 +119,12 @@ Rede Neuronal:
 
         Estrutura da Rede:
 
-            Composta por uma camada de entrada, duas camada oculta e uma camada de output,
+            Composta por uma camada de entrada, uma camada oculta e uma camada de output,
             utilizando a inicialização de He e função de ativação sigmoid para as camadas ocultas e a softmax para a camada de saída.
 
         Manuseio de Pesos:
 
-            Permite armazenar e recuperar pesos e vieses, facilitando as operações de mutação e cruzamento no contexto genético.
+            Permite armazenar e recuperar pesos e biases, facilitando as operações de mutação e cruzamento no contexto genético.
 
     Algoritmo Genético:
 
@@ -125,12 +135,12 @@ Rede Neuronal:
 
         Cruzamento (Crossover):
 
-            Utiliza uma técnica de crossover de one-point para misturar os genes de dois pais selecionados, gerando novos indivíduos.
+            Utiliza uma técnica de crossover de random crossover, em que para cada posição da rede gera um número random e, conforme o número que calhe, escolhe de qual pai associa o gene para aquela posição do filho, gerando novos indivíduos.
 
         Mutação:
 
             Modifica aleatoriamente uma percentagem dos genes de um indivíduo de acordo,
-            trocando as posições selecionadas por novos falores random.
+            trocando as posições selecionadas por novos falores random de 0 a 1.
 
         Seleção:
 

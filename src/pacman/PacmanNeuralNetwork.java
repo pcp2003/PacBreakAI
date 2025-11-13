@@ -20,6 +20,10 @@ public class PacmanNeuralNetwork extends NeuronalNetwork {
 
     // Método para normalizar os dados de entrada
     public double[] normalizeInput(double[] inputValues) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> Pacman_pedro
         /*
         double[] normalizedValues = new double[inputValues.length];
 

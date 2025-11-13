@@ -72,6 +72,7 @@ public class BreakoutGeneticAlgorithm extends GeneticAlgorithm {
         }
 
         System.out.println("Last individual " + population[POPULATION_SIZE - 1].getFitness());
+
         return population[POPULATION_SIZE - 1];
     }
 

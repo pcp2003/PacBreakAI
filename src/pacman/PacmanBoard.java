@@ -146,6 +146,10 @@ public class PacmanBoard extends JPanel implements ActionListener {
     @Override
     public void addNotify() {
         super.addNotify();
+<<<<<<< HEAD
+=======
+
+>>>>>>> Pacman_pedro
     }
 
     public void makeMove(int move) {
