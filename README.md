@@ -2,6 +2,16 @@
 
 This project implements AI agents for the Pacman and Breakout games using Genetic Algorithms (GA) and Neural Networks (NN). The system optimizes game-playing strategies through evolutionary computation and deep learning techniques.
 
+## Demo
+
+### Breakout AI in Action
+![Breakout Demo](gifs/Breakout%202025-11-14%2020-39-16.gif)
+
+### Pacman AI in Action
+![Pacman Demo](gifs/Pacman%202025-11-14%2020-40-55.gif)
+
+The AI agents learn to play these classic games through genetic algorithms that evolve neural networks over multiple generations, optimizing their strategies to achieve higher scores.
+
 ## Project Overview
 
 The project is divided into two main game implementations, each with its own GA and NN components that extend abstract base classes for code reusability and organization.
@@ -171,14 +181,26 @@ Each file contains parameter configurations with their corresponding fitness sco
 
 ## Usage Examples
 
+### Compilation
+
+First, compile all Java files:
+
+```powershell
+# Navigate to project directory
+cd "c:\Users\pedro\programas\PacBreakAI"
+
+# Compile all Java files
+javac -d out -cp src src\utils\*.java src\breakout\*.java src\pacman\*.java
+```
+
 ### Running the Best AI Agent
 
-```bash
+```powershell
 # For Breakout
-java -cp src breakout.Main
+java -cp "out;src" breakout.Main
 
 # For Pacman
-java -cp src pacman.Main
+java -cp "out;src" pacman.Main
 ```
 
 ### Testing New Parameter Configurations
