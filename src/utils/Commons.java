@@ -25,41 +25,23 @@ public interface Commons {
     public static final int BREAKOUT_NETWORK_SIZE = (Commons.BREAKOUT_STATE_SIZE * Commons.BREAKOUT_HIDDENDIM_SIZE) + Commons.BREAKOUT_HIDDENDIM_SIZE + (Commons.BREAKOUT_HIDDENDIM_SIZE * Commons.BREAKOUT_NUM_ACTIONS) + Commons.BREAKOUT_NUM_ACTIONS;
 
     //BREAKOUT PARAMETERES
-<<<<<<< HEAD
-    public static final double MUTATION_CHANCE_BREAKOUT = 0.49437504393788007;
-    public static final double MUTATION_PERCENTAGE_BREAKOUT = 0.24301110080996885;
-    public static final double CUTOFF_BREAKOUT = 0.3078215387340131;
-    public static final double SELECTION_PARENTS_PERCENTAGE_BREAKOUT = 0.8652187029205634;
-    public static final int k_tournament_BREAKOUT = 6;
-    public static final int k_point_BREAKOUT = 4;
-=======
     public static final double MUTATION_CHANCE_BREAKOUT = 0.45938064251444644;
     public static final double MUTATION_PERCENTAGE_BREAKOUT = 0.23492480629308726;
     public static final double CUTOFF_BREAKOUT = 0.69890818426316;
     public static final double SELECTION_PARENTS_PERCENTAGE_BREAKOUT = 0.41859519615986784;
     public static final int k_tournament_BREAKOUT = 6;
     public static final int k_point_BREAKOUT = 3;
->>>>>>> Pacman_pedro
     public static final int seed_BREAKOUT = 296;
 
     // AUX
     public static final int NrOfSeedsTested = 1;
     public static final int NrOfGATested = 1;
-<<<<<<< HEAD
-    public static final int BreakoutLeastPointsAccepted = 1000000;
-    public static final int PacmanLeastPointsAccepted = 80000;
-
-
-    public static final int PACMAN_STATE_SIZE = PacmanBoard.N_BLOCKS * PacmanBoard.N_BLOCKS * 2 + 2 + PacmanBoard.MAX_GHOSTS * 2;
-    public static final int PACMAN_NUM_ACTIONS = 4;
-=======
     public static final int BreakoutLeastPointsAccepted = 900000;
     public static final int PacmanLeastPointsAccepted = 70000;
 
 
     public static final int PACMAN_STATE_SIZE = PacmanBoard.N_BLOCKS * PacmanBoard.N_BLOCKS * 2 + 2 + PacmanBoard.MAX_GHOSTS * 2;
     public static final int PACMAN_NUM_ACTIONS = 5;
->>>>>>> Pacman_pedro
     public static final int PACMAN_HIDDEN_LAYER = 7;//(int) ((PACMAN_STATE_SIZE+PACMAN_NUM_ACTIONS)/2); (240)
     public static final int PACMAN_NETWORK_SIZE = (PACMAN_STATE_SIZE * PACMAN_HIDDEN_LAYER) + PACMAN_HIDDEN_LAYER + (PACMAN_HIDDEN_LAYER * PACMAN_NUM_ACTIONS) + PACMAN_NUM_ACTIONS;
 
