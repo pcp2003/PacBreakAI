@@ -4,11 +4,15 @@ This project implements AI agents for the Pacman and Breakout games using Geneti
 
 ## Demo
 
+<div align="center">
+
 ### Breakout AI in Action
-![Breakout Demo](gifs/Breakout%202025-11-14%2020-39-16.gif)
+<img src="gifs/Breakout%202025-11-14%2020-39-16.gif" alt="Breakout Demo" width="600">
 
 ### Pacman AI in Action
-![Pacman Demo](gifs/Pacman%202025-11-14%2020-40-55.gif)
+<img src="gifs/Pacman%202025-11-14%2020-40-55.gif" alt="Pacman Demo" width="600">
+
+</div>
 
 The AI agents learn to play these classic games through genetic algorithms that evolve neural networks over multiple generations, optimizing their strategies to achieve higher scores.
 
